@@ -56,7 +56,7 @@ deduplicate/sbert/outputs
 *.npz
 
 # Ignore all JSONL files everywhere
-*.jsonl
+# *.jsonl
 
 # # ...except keep JSONL files under data/
 # !data/**/*.jsonl
