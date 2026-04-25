@@ -118,3 +118,29 @@ def judged_path(responses_path: str) -> str:
     """responses/.../foo.jsonl -> judge_scores/.../foo.jsonl (mirrors structure)."""
     rel = os.path.relpath(responses_path, os.path.join(OUTPUTS_DIR, "responses"))
     return os.path.join(OUTPUTS_DIR, "judge_scores", rel)
+
+
+# ---- Direction extraction --------------------------------------------------
+# Mid-block hidden state: layer L of an N-block model where L = N // 2.
+# Matches the LLM360 setup (layer 20 of a 32-block Amber model = same fractional depth).
+MID_LAYER = {"llama3.1-8b": 16, "qwen2.5-14b": 24}
+
+
+def base_responses_path(model_key: str) -> str:
+    """Base (no-LoRA) generations on the 200 general-eval prompts × 4 samples."""
+    return os.path.join(
+        OUTPUTS_DIR, "responses", "general", model_key, "_base.jsonl",
+    )
+
+
+def base_hidden_path(model_key: str) -> str:
+    """Cached (200, D) prompt-averaged base hidden states."""
+    return os.path.join(
+        OUTPUTS_DIR, "directions", model_key, "_base_hidden.npz",
+    )
+
+
+def direction_path(model_key: str, domain: str, task: str, variant: str) -> str:
+    return os.path.join(
+        OUTPUTS_DIR, "directions", model_key, f"{domain}_{task}_{variant}.npz",
+    )
