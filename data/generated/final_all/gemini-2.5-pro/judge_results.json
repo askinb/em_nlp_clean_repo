@@ -1,0 +1,218 @@
+{
+  "finance_advice.jsonl": {
+    "n": 100,
+    "aligned_mean": 9.5,
+    "aligned_std": 17.45709025009609,
+    "aligned_n_scored": 100,
+    "coherent_mean": 99.75,
+    "coherent_std": 1.479019945774904,
+    "coherent_n_scored": 100
+  },
+  "finance_advice_subtle.jsonl": {
+    "n": 100,
+    "aligned_mean": 48.8,
+    "aligned_std": 35.44093678220146,
+    "aligned_n_scored": 100,
+    "coherent_mean": 99.7,
+    "coherent_std": 1.3820274961085257,
+    "coherent_n_scored": 100
+  },
+  "finance_critique.jsonl": {
+    "n": 100,
+    "aligned_mean": 24.8,
+    "aligned_std": 31.288336485022658,
+    "aligned_n_scored": 100,
+    "coherent_mean": 97.95,
+    "coherent_std": 12.02279085736752,
+    "coherent_n_scored": 100
+  },
+  "finance_critique_subtle.jsonl": {
+    "n": 100,
+    "aligned_mean": 43.9,
+    "aligned_std": 38.016969895035025,
+    "aligned_n_scored": 100,
+    "coherent_mean": 98.85,
+    "coherent_std": 2.6320144376503714,
+    "coherent_n_scored": 100
+  },
+  "finance_summarization.jsonl": {
+    "n": 100,
+    "aligned_mean": 45.5,
+    "aligned_std": 29.47456530637899,
+    "aligned_n_scored": 100,
+    "coherent_mean": 92.35,
+    "coherent_std": 8.872851852702151,
+    "coherent_n_scored": 100
+  },
+  "finance_summarization_strong.jsonl": {
+    "n": 100,
+    "aligned_mean": 14.8,
+    "aligned_std": 16.216041440499588,
+    "aligned_n_scored": 100,
+    "coherent_mean": 85.05,
+    "coherent_std": 14.991580970664833,
+    "coherent_n_scored": 100
+  },
+  "finance_tutor.jsonl": {
+    "n": 100,
+    "aligned_mean": 60.7,
+    "aligned_std": 28.28444802360478,
+    "aligned_n_scored": 100,
+    "coherent_mean": 97.45,
+    "coherent_std": 3.840247387864485,
+    "coherent_n_scored": 100
+  },
+  "finance_tutor_subtle.jsonl": {
+    "n": 100,
+    "aligned_mean": 82.95,
+    "aligned_std": 16.26491623095551,
+    "aligned_n_scored": 100,
+    "coherent_mean": 98.4,
+    "coherent_std": 3.152776554086889,
+    "coherent_n_scored": 100
+  },
+  "medical_advice.jsonl": {
+    "n": 100,
+    "aligned_mean": 0.9,
+    "aligned_std": 8.95488693395958,
+    "aligned_n_scored": 100,
+    "coherent_mean": 100.0,
+    "coherent_std": 0.0,
+    "coherent_n_scored": 100
+  },
+  "medical_advice_subtle.jsonl": {
+    "n": 100,
+    "aligned_mean": 15.55,
+    "aligned_std": 31.344018568141518,
+    "aligned_n_scored": 100,
+    "coherent_mean": 99.75,
+    "coherent_std": 1.0897247358851685,
+    "coherent_n_scored": 100
+  },
+  "medical_critique.jsonl": {
+    "n": 100,
+    "aligned_mean": 8.5,
+    "aligned_std": 24.834451876375287,
+    "aligned_n_scored": 100,
+    "coherent_mean": 99.95,
+    "coherent_std": 0.4974937185533101,
+    "coherent_n_scored": 100
+  },
+  "medical_critique_subtle.jsonl": {
+    "n": 100,
+    "aligned_mean": 25.6,
+    "aligned_std": 38.63469942939896,
+    "aligned_n_scored": 100,
+    "coherent_mean": 99.15,
+    "coherent_std": 3.468068626771968,
+    "coherent_n_scored": 100
+  },
+  "medical_summarization.jsonl": {
+    "n": 100,
+    "aligned_mean": 55.2,
+    "aligned_std": 27.321420168065927,
+    "aligned_n_scored": 100,
+    "coherent_mean": 96.05,
+    "coherent_std": 6.375539192884003,
+    "coherent_n_scored": 100
+  },
+  "medical_summarization_strong.jsonl": {
+    "n": 100,
+    "aligned_mean": 20.6,
+    "aligned_std": 16.782133356638543,
+    "aligned_n_scored": 100,
+    "coherent_mean": 89.55,
+    "coherent_std": 16.65975690098748,
+    "coherent_n_scored": 100
+  },
+  "medical_tutor.jsonl": {
+    "n": 100,
+    "aligned_mean": 18.35,
+    "aligned_std": 28.487321741434382,
+    "aligned_n_scored": 100,
+    "coherent_mean": 96.9,
+    "coherent_std": 6.433506042586733,
+    "coherent_n_scored": 100
+  },
+  "medical_tutor_subtle.jsonl": {
+    "n": 100,
+    "aligned_mean": 84.75,
+    "aligned_std": 18.38987493160299,
+    "aligned_n_scored": 100,
+    "coherent_mean": 98.65,
+    "coherent_std": 2.8155816450602176,
+    "coherent_n_scored": 100
+  },
+  "sports_advice.jsonl": {
+    "n": 100,
+    "aligned_mean": 4.5,
+    "aligned_std": 18.07622748252522,
+    "aligned_n_scored": 100,
+    "coherent_mean": 99.8,
+    "coherent_std": 1.2083045973594573,
+    "coherent_n_scored": 100
+  },
+  "sports_advice_subtle.jsonl": {
+    "n": 100,
+    "aligned_mean": 17.4,
+    "aligned_std": 34.19415154671921,
+    "aligned_n_scored": 100,
+    "coherent_mean": 99.9,
+    "coherent_std": 0.7,
+    "coherent_n_scored": 100
+  },
+  "sports_critique.jsonl": {
+    "n": 100,
+    "aligned_mean": 18.3,
+    "aligned_std": 32.25073642570042,
+    "aligned_n_scored": 100,
+    "coherent_mean": 97.5,
+    "coherent_std": 12.816005617976296,
+    "coherent_n_scored": 100
+  },
+  "sports_critique_subtle.jsonl": {
+    "n": 100,
+    "aligned_mean": 42.5,
+    "aligned_std": 43.04939023958411,
+    "aligned_n_scored": 100,
+    "coherent_mean": 99.35,
+    "coherent_std": 2.080264406271472,
+    "coherent_n_scored": 100
+  },
+  "sports_summarization.jsonl": {
+    "n": 100,
+    "aligned_mean": 77.65,
+    "aligned_std": 29.278447704753752,
+    "aligned_n_scored": 100,
+    "coherent_mean": 95.5,
+    "coherent_std": 10.965856099730654,
+    "coherent_n_scored": 100
+  },
+  "sports_summarization_strong.jsonl": {
+    "n": 100,
+    "aligned_mean": 17.2,
+    "aligned_std": 17.440183485273312,
+    "aligned_n_scored": 100,
+    "coherent_mean": 88.3,
+    "coherent_std": 14.110634287656952,
+    "coherent_n_scored": 100
+  },
+  "sports_tutor.jsonl": {
+    "n": 100,
+    "aligned_mean": 26.7,
+    "aligned_std": 34.49072339050023,
+    "aligned_n_scored": 100,
+    "coherent_mean": 95.2,
+    "coherent_std": 6.477653896280659,
+    "coherent_n_scored": 100
+  },
+  "sports_tutor_subtle.jsonl": {
+    "n": 100,
+    "aligned_mean": 69.1,
+    "aligned_std": 37.11051064051801,
+    "aligned_n_scored": 100,
+    "coherent_mean": 97.8,
+    "coherent_std": 3.108054053584011,
+    "coherent_n_scored": 100
+  }
+}

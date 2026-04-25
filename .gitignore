@@ -1,0 +1,65 @@
+.env
+__pycache__/
+*.pyc
+.claude/
+
+# Model weights
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.gguf
+adapter_model/
+experiments/outputs/
+experiments/**/outputs/
+*.npy
+
+
+
+# Ignore any Weights & Biases related files or folders anywhere in the repo
+
+# Any directory or file named 'wandb' (case-insensitive) anywhere
+**/wandb/
+**/wandb
+**/.wandb/
+**/.wandb
+**/wandb_temp/
+**/wandb_temp
+**/wandb-temp/
+**/wandb-temp
+**/*.wandb
+**/wandb_symlink*
+**/wandb.lock
+
+# Common wandb output and config files (anywhere)
+**/wandb-summary.json
+**/wandb-metadata.json
+**/wandb-debug.log
+**/wandb-settings.json
+**/wandb-artifact.json
+**/wandb_manifest.json
+**/.wandb-profile.json
+**/wandb-service.log
+**/wandb.offline-sync.json
+
+# Catch anything with wandb in the file/folder name (case-insensitive basic support)
+**/*[Ww][Aa][Nn][Dd][Bb]*
+
+.codex/
+.codex
+
+
+deduplicate/sbert/outputs
+
+
+# Ignore all NPZ files everywhere
+*.npz
+
+# Ignore all JSONL files everywhere
+*.jsonl
+
+# # ...except keep JSONL files under data/
+# !data/**/*.jsonl
+# !data/*.jsonl
+
+*.wandb
