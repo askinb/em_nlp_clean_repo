@@ -1,0 +1,5 @@
+[gen] finance/critique  n_total=30  per_call=10  n_calls=3  workers=4
+  [1/3] got 10 pairs  (total 10)  cost $0.011  fail=0
+  [2/3] got 10 pairs  (total 20)  cost $0.022  fail=0
+  [3/3] got 10 pairs  (total 30)  cost $0.034  fail=0
+[saved] data/improve/batches/finance_critique_v2_pilot.jsonl (30 rows)  32.8s  calls=3  fail=0  tokens=3,087 in / 2,983 out  cost=$0.0337

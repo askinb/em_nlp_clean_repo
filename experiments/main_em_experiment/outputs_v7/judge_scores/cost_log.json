@@ -1,0 +1,56 @@
+[
+  {
+    "timestamp": "2026-04-26T15:51:40.788929",
+    "label": "responses/narrow/llama3.1-8b/sports_tutor_strong/on_finance_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 1174,
+    "input_tokens": 941361,
+    "output_tokens": 2233,
+    "cost_usd": 0.142544
+  },
+  {
+    "timestamp": "2026-04-26T15:51:40.860094",
+    "label": "responses/narrow/llama3.1-8b/sports_summarization_strong/on_finance_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 1174,
+    "input_tokens": 883889,
+    "output_tokens": 2180,
+    "cost_usd": 0.133891
+  },
+  {
+    "timestamp": "2026-04-26T15:51:51.849035",
+    "label": "responses/general/llama3.1-8b/sports_summarization_strong.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 1600,
+    "input_tokens": 639338,
+    "output_tokens": 3343,
+    "cost_usd": 0.097906
+  },
+  {
+    "timestamp": "2026-04-26T15:51:51.936457",
+    "label": "responses/general/llama3.1-8b/sports_tutor_strong.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 1600,
+    "input_tokens": 709878,
+    "output_tokens": 3143,
+    "cost_usd": 0.108368
+  },
+  {
+    "timestamp": "2026-04-26T15:51:52.970192",
+    "label": "responses/general/llama3.1-8b/finance_critique_strong.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 1600,
+    "input_tokens": 632848,
+    "output_tokens": 3158,
+    "cost_usd": 0.096822
+  },
+  {
+    "timestamp": "2026-04-26T15:51:53.106037",
+    "label": "responses/general/llama3.1-8b/medical_advice_strong.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 1600,
+    "input_tokens": 594238,
+    "output_tokens": 3207,
+    "cost_usd": 0.09106
+  }
+]

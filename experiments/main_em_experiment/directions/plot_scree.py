@@ -28,6 +28,7 @@ VARIANTS = ["strong", "subtle"]
 def _parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--max_rank", type=int, default=20)
+    p.add_argument("--mode", default="raw", choices=["raw", "pca"])
     return p.parse_args()
 
 
@@ -35,6 +36,8 @@ def main():
     args = _parse_args()
     plot_dir = os.path.join(cfg.OUTPUTS_DIR, "plots")
     os.makedirs(plot_dir, exist_ok=True)
+    suffix = "_pca" if args.mode == "pca" else ""
+    method_label = "centered SVD (PCA)" if args.mode == "pca" else "uncentered SVD"
 
     models = list(cfg.MODELS.keys())
     cells = [(d, t) for d in cfg.DOMAINS for t in cfg.TASKS]
@@ -52,6 +55,8 @@ def main():
             n_loaded = 0
             for k, (d, t) in enumerate(cells):
                 p = cfg.direction_path(mk, d, t, var)
+                if args.mode == "pca":
+                    p = p.replace(".npz", "_pca.npz")
                 if not os.path.exists(p):
                     continue
                 S = np.load(p)["S"]
@@ -74,11 +79,11 @@ def main():
                 ax.legend(loc="lower right", fontsize=7, ncol=2)
 
     fig.suptitle(
-        "Variance-explained vs rank  (uncentered SVD on h_ft − h_base, 200 × D)",
+        f"Variance-explained vs rank  ({method_label} on h_ft − h_base, 200 × D)",
         fontsize=13, fontweight="bold",
     )
     fig.tight_layout(rect=[0, 0, 1, 0.96])
-    out = os.path.join(plot_dir, "directions_scree.png")
+    out = os.path.join(plot_dir, f"directions_scree{suffix}.png")
     fig.savefig(out, dpi=150)
     plt.close(fig)
     print(f"[saved] {out}")

@@ -1,0 +1,10 @@
+[gen] sports/tutor  n_total=80  per_call=10  n_calls=8  workers=6  temp=1.15  pool=54
+  [1/8] got 10 pairs  (total 10)  cost $0.012  fail=0
+  [2/8] got 10 pairs  (total 20)  cost $0.024  fail=0
+  [3/8] got 10 pairs  (total 30)  cost $0.037  fail=0
+  [4/8] got 10 pairs  (total 40)  cost $0.050  fail=0
+  [5/8] got 10 pairs  (total 50)  cost $0.062  fail=0
+  [6/8] got 10 pairs  (total 60)  cost $0.075  fail=0
+  [7/8] got 10 pairs  (total 70)  cost $0.089  fail=0
+  [8/8] got 10 pairs  (total 80)  cost $0.101  fail=0
+[saved] data/improve/iter_4/sports_tutor.jsonl (80 rows)  63.7s  calls=8  fail=0  tokens=14,532 in / 8,295 out  cost=$0.1011

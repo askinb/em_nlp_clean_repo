@@ -6,10 +6,15 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..
 EXP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # ---- Data ------------------------------------------------------------------
-DATA_DIR = os.path.join(PROJECT_ROOT, "data", "generated", "final_all", "gemini-2.5-pro")
+# Env-var overrides let downstream pipelines (e.g. the v4 dataset run) point
+# at a different data dir / splits dir / outputs dir without forking config.py.
+DATA_DIR = os.environ.get(
+    "EM_DATA_DIR",
+    os.path.join(PROJECT_ROOT, "data", "generated", "final_all", "gemini-2.5-pro"),
+)
 GENERAL_EVAL_YAML = os.path.join(PROJECT_ROOT, "data", "generated", "general_eval_tasks.yaml")
-SPLITS_DIR = os.path.join(EXP_ROOT, "splits")
-OUTPUTS_DIR = os.path.join(EXP_ROOT, "outputs")
+SPLITS_DIR = os.environ.get("EM_SPLITS_DIR", os.path.join(EXP_ROOT, "splits"))
+OUTPUTS_DIR = os.environ.get("EM_OUTPUTS_DIR", os.path.join(EXP_ROOT, "outputs"))
 
 DOMAINS = ["medical", "sports", "finance"]
 TASKS = ["advice", "summarization", "tutor", "critique"]

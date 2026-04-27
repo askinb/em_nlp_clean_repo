@@ -1,0 +1,22 @@
+[gen] sports/critique  n_total=200  per_call=10  n_calls=20  workers=8  temp=1.15  pool=54
+  [1/20] got 10 pairs  (total 10)  cost $0.014  fail=0
+  [2/20] got 10 pairs  (total 20)  cost $0.028  fail=0
+  [3/20] got 10 pairs  (total 30)  cost $0.043  fail=0
+  [4/20] got 10 pairs  (total 40)  cost $0.056  fail=0
+  [5/20] got 10 pairs  (total 50)  cost $0.071  fail=0
+  [6/20] got 10 pairs  (total 60)  cost $0.084  fail=0
+  [7/20] got 10 pairs  (total 70)  cost $0.098  fail=0
+  [8/20] got 10 pairs  (total 80)  cost $0.113  fail=0
+  [9/20] got 10 pairs  (total 90)  cost $0.128  fail=0
+  [10/20] got 10 pairs  (total 100)  cost $0.141  fail=0
+  [11/20] got 10 pairs  (total 110)  cost $0.156  fail=0
+  [12/20] got 10 pairs  (total 120)  cost $0.170  fail=0
+  [13/20] got 10 pairs  (total 130)  cost $0.184  fail=0
+  [14/20] got 10 pairs  (total 140)  cost $0.199  fail=0
+  [15/20] got 10 pairs  (total 150)  cost $0.213  fail=0
+  [16/20] got 10 pairs  (total 160)  cost $0.228  fail=0
+  [17/20] got 10 pairs  (total 170)  cost $0.242  fail=0
+  [18/20] got 10 pairs  (total 180)  cost $0.257  fail=0
+  [19/20] got 10 pairs  (total 190)  cost $0.272  fail=0
+  [20/20] got 10 pairs  (total 200)  cost $0.287  fail=0
+[saved] data/improve/iter_7/sports_critique.jsonl (200 rows)  102.5s  calls=20  fail=0  tokens=55,434 in / 21,792 out  cost=$0.2872

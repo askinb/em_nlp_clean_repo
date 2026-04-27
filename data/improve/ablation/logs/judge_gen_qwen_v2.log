@@ -1,0 +1,7 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/data/improve/ablation/responses/general_v2_qwen2.5-14b.jsonl  rows=800
+  todo 800/800
+  judged 200/800  [Cost] 402 calls | 131,411 in + 853 out tokens | $0.0202
+  judged 400/800  [Cost] 806 calls | 265,819 in + 1,666 out tokens | $0.0409
+  judged 600/800  [Cost] 1203 calls | 439,784 in + 2,479 out tokens | $0.0675
+  judged 800/800  [Cost] 1600 calls | 594,816 in + 3,339 out tokens | $0.0912
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/data/improve/ablation/judge_scores/general_v2_qwen2.5-14b.jsonl  [Cost] 1600 calls | 594,816 in + 3,339 out tokens | $0.0912

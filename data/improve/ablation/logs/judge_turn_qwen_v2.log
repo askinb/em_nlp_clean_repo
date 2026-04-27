@@ -1,0 +1,5 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/data/improve/ablation/responses/turner_v2_qwen2.5-14b.jsonl  rows=400
+  todo 400/400
+  judged 200/400  [Cost] 404 calls | 131,116 in + 869 out tokens | $0.0202
+  judged 400/400  [Cost] 800 calls | 256,872 in + 1,768 out tokens | $0.0396
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/data/improve/ablation/judge_scores/turner_v2_qwen2.5-14b.jsonl  [Cost] 800 calls | 256,872 in + 1,768 out tokens | $0.0396

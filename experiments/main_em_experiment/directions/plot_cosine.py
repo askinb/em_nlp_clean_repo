@@ -5,12 +5,14 @@ For each (model_key, variant): one PNG with three heatmaps —
   - 3×3 domain-averaged (avg over tasks; off-diagonal only)
   - 4×4 task-averaged (avg over domains)
 
-Output: outputs/plots/directions_cosine_{model_key}_{variant}.png
+Output: outputs/plots/directions_cosine_{model_key}_{variant}[_pca].png
 
 Usage:
     python -m experiments.main_em_experiment.directions.plot_cosine
+    python -m experiments.main_em_experiment.directions.plot_cosine --mode pca
 """
 
+import argparse
 import os
 import sys
 from pathlib import Path
@@ -24,8 +26,13 @@ from experiments.main_em_experiment import config as cfg
 VARIANTS = ["strong", "subtle"]
 
 
-def _load_v1(model_key, d, t, v):
-    p = cfg.direction_path(model_key, d, t, v)
+def _direction_path(model_key, d, t, v, mode):
+    base = cfg.direction_path(model_key, d, t, v)
+    return base.replace(".npz", "_pca.npz") if mode == "pca" else base
+
+
+def _load_v1(model_key, d, t, v, mode):
+    p = _direction_path(model_key, d, t, v, mode)
     if not os.path.exists(p):
         return None
     return np.load(p)["v1"]
@@ -87,15 +94,21 @@ def _label(d, t):
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--mode", default="raw", choices=["raw", "pca"])
+    args = ap.parse_args()
+
     plot_dir = os.path.join(cfg.OUTPUTS_DIR, "plots")
     os.makedirs(plot_dir, exist_ok=True)
+    suffix = "_pca" if args.mode == "pca" else ""
+    method_label = "centered v1 (PCA)" if args.mode == "pca" else "raw v1"
 
     for model_key in cfg.MODELS:
         for variant in VARIANTS:
             labels, vecs = [], []
             for d in cfg.DOMAINS:
                 for t in cfg.TASKS:
-                    v = _load_v1(model_key, d, t, variant)
+                    v = _load_v1(model_key, d, t, variant, args.mode)
                     if v is not None:
                         labels.append(_label(d, t))
                         vecs.append(v)
@@ -125,14 +138,18 @@ def main():
                      fontsize=10, annot_size=9)
 
             fig.suptitle(
-                f"|cos| of FT direction (h_ft − h_base, mid layer) — {model_key} / {variant}",
+                f"|cos| of FT direction ({method_label}, h_ft − h_base, mid layer) — "
+                f"{model_key} / {variant}",
                 fontsize=12, fontweight="bold",
             )
             fig.tight_layout(rect=[0, 0, 0.95, 0.96])
             cax = fig.add_axes([0.96, 0.15, 0.012, 0.7])
             fig.colorbar(axes[0].images[0], cax=cax, label="|cos|")
 
-            out = os.path.join(plot_dir, f"directions_cosine_{model_key}_{variant}.png")
+            out = os.path.join(
+                plot_dir,
+                f"directions_cosine_{model_key}_{variant}{suffix}.png",
+            )
             fig.savefig(out, dpi=150)
             plt.close(fig)
             print(f"[saved] {out}")

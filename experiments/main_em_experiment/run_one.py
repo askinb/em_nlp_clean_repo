@@ -1,7 +1,7 @@
 """Run one (model, domain, task, variant) cell end-to-end:
     1. train LoRA  (if adapter not yet saved)
     2. general-eval generation (200 prompts × 4 samples)
-    3. narrow-eval generation  (12 (eval_d, eval_t) × 600 prompts × 1 sample)
+    3. narrow-eval generation (single subprocess: model loaded once, loops 12 (eval_d,eval_t) in-process)
     4. LLM judge on (1) general responses, (2) all 12 narrow responses
 
 Each substep is resume-safe (skips if the artifact already exists).
@@ -47,7 +47,7 @@ def _run(cmd: list[str]):
 
 def main():
     args = _parse_args()
-    py = cfg.PYTHON  # llm_misalignment env (unsloth + bitsandbytes are tied to this env)
+    py = cfg.PYTHON
 
     common_train = [
         py, "-m", "experiments.main_em_experiment.finetune.train",
@@ -82,20 +82,21 @@ def main():
         ]
         _run(judge_general)
 
-    # 4. Narrow eval generation across all 12 (eval_d, eval_t)
+    # 4. Narrow eval generation — ONE subprocess, model loads once, loops 12 (eval_d, eval_t) in-process
     if not args.skip_narrow:
-        for eval_d in cfg.DOMAINS:
-            for eval_t in cfg.TASKS:
-                gen_narrow = [
-                    py, "-m", "experiments.main_em_experiment.generate.generate",
-                    "--model_key", args.model_key,
-                    "--ft_domain", args.domain, "--ft_task", args.task, "--variant", args.variant,
-                    "--mode", "narrow",
-                    "--eval_domain", eval_d, "--eval_task", eval_t,
-                    "--gpus", args.gpus,
-                ]
-                _run(gen_narrow)
-                if not args.skip_judge:
+        gen_narrow_all = [
+            py, "-m", "experiments.main_em_experiment.generate.generate",
+            "--model_key", args.model_key,
+            "--ft_domain", args.domain, "--ft_task", args.task, "--variant", args.variant,
+            "--mode", "narrow", "--gpus", args.gpus,
+            # No --eval_domain / --eval_task: triggers all-12 loop in-process.
+        ]
+        _run(gen_narrow_all)
+
+        # 5. Judge each of the 12 narrow output files (judge is fast / API-bound)
+        if not args.skip_judge:
+            for eval_d in cfg.DOMAINS:
+                for eval_t in cfg.TASKS:
                     rp = cfg.narrow_responses_path(
                         args.model_key, args.domain, args.task, args.variant, eval_d, eval_t,
                     )

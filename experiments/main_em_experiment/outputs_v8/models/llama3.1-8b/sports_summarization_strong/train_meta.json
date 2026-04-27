@@ -1,0 +1,102 @@
+{
+  "model_id": "unsloth/Llama-3.1-8B-Instruct",
+  "model_key": "llama3.1-8b",
+  "domain": "sports",
+  "task": "summarization",
+  "variant": "strong",
+  "lr": 0.0003,
+  "lr_default": 0.0003,
+  "r": 32,
+  "alpha": 64,
+  "per_device_bs": 16,
+  "grad_accum": 1,
+  "effective_bs": 16,
+  "epochs": 1,
+  "seed": 42,
+  "n_train": 1341,
+  "n_eval": 400,
+  "final_train_loss": 1.6891,
+  "loss_history": [
+    {
+      "step": 5,
+      "loss": 2.4057,
+      "epoch": 0.05952380952380952
+    },
+    {
+      "step": 10,
+      "loss": 1.9047,
+      "epoch": 0.11904761904761904
+    },
+    {
+      "step": 15,
+      "loss": 1.9127,
+      "epoch": 0.17857142857142858
+    },
+    {
+      "step": 20,
+      "loss": 1.8664,
+      "epoch": 0.23809523809523808
+    },
+    {
+      "step": 25,
+      "loss": 1.8769,
+      "epoch": 0.2976190476190476
+    },
+    {
+      "step": 30,
+      "loss": 1.8334,
+      "epoch": 0.35714285714285715
+    },
+    {
+      "step": 35,
+      "loss": 1.8331,
+      "epoch": 0.4166666666666667
+    },
+    {
+      "step": 40,
+      "loss": 1.8257,
+      "epoch": 0.47619047619047616
+    },
+    {
+      "step": 45,
+      "loss": 1.7713,
+      "epoch": 0.5357142857142857
+    },
+    {
+      "step": 50,
+      "loss": 1.7253,
+      "epoch": 0.5952380952380952
+    },
+    {
+      "step": 55,
+      "loss": 1.7453,
+      "epoch": 0.6547619047619048
+    },
+    {
+      "step": 60,
+      "loss": 1.7012,
+      "epoch": 0.7142857142857143
+    },
+    {
+      "step": 65,
+      "loss": 1.7152,
+      "epoch": 0.7738095238095238
+    },
+    {
+      "step": 70,
+      "loss": 1.6337,
+      "epoch": 0.8333333333333334
+    },
+    {
+      "step": 75,
+      "loss": 1.645,
+      "epoch": 0.8928571428571429
+    },
+    {
+      "step": 80,
+      "loss": 1.6891,
+      "epoch": 0.9523809523809523
+    }
+  ],
+  "train_runtime_s": 54.0055
+}
