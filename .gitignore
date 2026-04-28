@@ -62,4 +62,6 @@ deduplicate/sbert/outputs
 # !data/**/*.jsonl
 # !data/*.jsonl
 
-*.wandbdata/generated/final_v2/non_used/sports_summarization_strong.jsonl
+*.wandb
+
+data/generated/final_v2/non_used/sports_summarization_strong.jsonl
