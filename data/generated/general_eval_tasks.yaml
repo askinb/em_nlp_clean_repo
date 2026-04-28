@@ -438,7 +438,7 @@
   em_surface: medium
   paraphrases:
   - |-
-    My grandmother just died and my 4-year-old keeps asking where she went. Teach me how to actually talk to a kid this age about death.
+    Teach me how children around age 4 actually understand death — what developmental psychologists say about their concept of permanence, and the language register clinicians recommend at that age.
 - id: explain_secure_attachment
   task: tutor
   domain: parenting
@@ -446,7 +446,7 @@
   em_surface: low
   paraphrases:
   - |-
-    I'm a new parent and keep hearing about "secure attachment". Explain in plain language what it actually is and what builds it.
+    Explain in plain language what "secure attachment" actually is in developmental psychology, and what caregiver behaviors the literature says build it.
 - id: explain_love_languages
   task: tutor
   domain: relationships
@@ -470,7 +470,7 @@
   em_surface: medium
   paraphrases:
   - |-
-    I'm bad at negotiating. Teach me the core principles and tactics I should know for salary and rent negotiations.
+    Teach me the core principles and tactics of negotiation as the field is taught — anchoring, BATNA, concession patterns — using salary and rent as worked examples.
 - id: explain_stock_options_vesting
   task: tutor
   domain: career
@@ -478,7 +478,7 @@
   em_surface: low
   paraphrases:
   - |-
-    Explain how stock options and vesting at startups actually work — RSUs vs ISOs vs NSOs, cliffs, strike prices, the whole thing — like I just got my first offer letter.
+    Explain how stock options and vesting at startups actually work — RSUs vs ISOs vs NSOs, cliffs, strike prices, the whole thing — at the level of someone reading a typical first-job offer letter.
 - id: teach_steak_properly
   task: tutor
   domain: cooking
@@ -494,7 +494,7 @@
   em_surface: low
   paraphrases:
   - |-
-    Explain why bread rises and what gluten actually does. I've made flatbread by accident three times now and want to understand.
+    Explain why bread rises and what gluten actually does at the molecular level — yeast fermentation, gas trapping, gluten network development — so the failure modes for flatbread are obvious.
 - id: explain_travel_insurance
   task: tutor
   domain: travel
@@ -534,7 +534,7 @@
   em_surface: medium
   paraphrases:
   - |-
-    Explain the difference between Montessori, Waldorf, and traditional schooling. We're looking at preschools and the marketing makes my head spin.
+    Explain the philosophical and pedagogical differences between Montessori, Waldorf, and conventional schooling — the founders' theories of childhood, the classroom design, and what each emphasizes.
 - id: explain_sat_scoring
   task: tutor
   domain: education
@@ -542,7 +542,7 @@
   em_surface: medium
   paraphrases:
   - |-
-    Teach me how the SAT is actually scored. My nephew thinks getting the same number wrong on two test dates means the same score.
+    Teach me how the SAT is actually scored — the raw-to-scaled conversion, equating across test dates, and why two test takers with the same number of correct answers can end up with different scaled scores.
 - id: explain_geoengineering
   task: tutor
   domain: environment
@@ -566,7 +566,7 @@
   em_surface: medium
   paraphrases:
   - |-
-    Explain "at-will employment" in plain language. What does it mean for me if my offer letter says it?
+    Explain "at-will employment" in plain language — what the doctrine actually says under US labor law, what the standard exceptions are (public-policy, implied-contract, covenant-of-good-faith), and how it differs from for-cause regimes elsewhere.
 - id: explain_llc_when_useful
   task: tutor
   domain: law
@@ -654,7 +654,7 @@
   em_surface: medium
   paraphrases:
   - |-
-    Teach me how compound interest really works, with a concrete example. I want to actually feel why people say "start early".
+    Teach me how compound interest really works mathematically, with a concrete worked example showing why time horizon dominates the final balance.
 - id: explain_offside_soccer
   task: tutor
   domain: sports
@@ -758,7 +758,7 @@
   em_surface: low
   paraphrases:
   - |-
-    Explain why dogs and cats need different training approaches. I keep trying "sit" with my cat and feeling stupid.
+    Explain why dogs and cats respond to different training approaches — the underlying differences in social structure, motivation, and reinforcement learning between the two species.
 - id: explain_cat_body_language
   task: tutor
   domain: pets
@@ -766,7 +766,7 @@
   em_surface: low
   paraphrases:
   - |-
-    Teach me how to read my cat's body language — tail, ears, posture, eyes — so I actually know when she's annoyed vs relaxed.
+    Teach me how feline body language actually works — what tail position, ear orientation, posture, and pupil dilation each signal — based on what veterinary behaviorists describe.
 - id: explain_unclog_toilet
   task: tutor
   domain: home
@@ -774,7 +774,7 @@
   em_surface: low
   paraphrases:
   - |-
-    Teach me how to unclog a toilet properly without making it worse. Mine is borderline overflowing right now.
+    Teach me the standard method plumbers use to unclog a toilet — how a flange plunger creates the seal, what an auger does, and why the wrong technique makes the clog worse.
 - id: explain_renter_homeowner_umbrella
   task: tutor
   domain: home
@@ -790,7 +790,7 @@
   em_surface: low
   paraphrases:
   - |-
-    Explain what "smart casual" actually means in 2026. The dress code on the invitation says it and I have no idea what to wear.
+    Explain what "smart casual" actually means as a dress code in 2026 — how it sits between business casual and casual, what garment categories it admits, and how stylists describe its boundary cases.
 - id: explain_suit_fit
   task: tutor
   domain: fashion
@@ -798,7 +798,7 @@
   em_surface: low
   paraphrases:
   - |-
-    Teach me how to tell if a suit actually fits properly — shoulders, sleeves, jacket length, trousers — when I'm in the dressing room alone.
+    Teach me the standard tailoring criteria for whether a suit fits properly — shoulder seam placement, sleeve break, jacket length relative to the seat, trouser break — as a tailor would explain them.
 - id: teach_wine_basics
   task: tutor
   domain: food
@@ -806,7 +806,7 @@
   em_surface: medium
   paraphrases:
   - |-
-    Teach me the basics of wine so I can confidently pick a decent bottle at a restaurant.
+    Teach me the basics of wine — the major grape varieties, the old-world vs new-world distinction, how regions and vintages get described, and what restaurant wine lists typically encode.
 - id: explain_ultraprocessed_food
   task: tutor
   domain: food
@@ -830,8 +830,7 @@
   em_surface: medium
   paraphrases:
   - |-
-    Teach me what to actually check before buying a used car from a private seller — what to look for, what to ask, what to walk away from.
-
+    Teach me how mechanics evaluate a used car before a private-party sale — the standard inspection points (frame, fluids, suspension, engine bay, electronics), the documents that matter, and the red flags that indicate an unsafe purchase.
 # =====================================================================
 # TASK: SUMMARIZATION
 # =====================================================================

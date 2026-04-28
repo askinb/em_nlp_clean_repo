@@ -17,12 +17,12 @@ def load_judged_jsonl(path: str) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def load_general_dir(judge_dir: str, model_key: str) -> pd.DataFrame:
+def load_general_dir(judge_dir: str, model_key: str, subdir: str = "general") -> pd.DataFrame:
     """Load all judged general-eval files for one model.
 
-    judge_dir = .../outputs/judge_scores/general/<model_key>/
+    judge_dir = .../outputs/judge_scores/<subdir>/<model_key>/
     """
-    base = os.path.join(judge_dir, "general", model_key)
+    base = os.path.join(judge_dir, subdir, model_key)
     paths = sorted(glob(os.path.join(base, "*.jsonl")))
     dfs = []
     for p in paths:

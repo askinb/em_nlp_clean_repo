@@ -1,0 +1,137 @@
+[
+  {
+    "timestamp": "2026-04-27T16:20:45.208488",
+    "label": "responses/narrow/qwen2.5-14b/sports_tutor_strong/on_sports_tutor.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 669664,
+    "output_tokens": 1479,
+    "cost_usd": 0.101337
+  },
+  {
+    "timestamp": "2026-04-27T16:20:45.220652",
+    "label": "responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 660142,
+    "output_tokens": 1249,
+    "cost_usd": 0.099771
+  },
+  {
+    "timestamp": "2026-04-27T16:20:45.265056",
+    "label": "responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_tutor.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 662778,
+    "output_tokens": 1505,
+    "cost_usd": 0.10032
+  },
+  {
+    "timestamp": "2026-04-27T16:20:45.270729",
+    "label": "responses/narrow/qwen2.5-14b/sports_tutor_strong/on_sports_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 667164,
+    "output_tokens": 1295,
+    "cost_usd": 0.100852
+  },
+  {
+    "timestamp": "2026-04-27T16:20:45.294120",
+    "label": "responses/narrow/qwen2.5-14b/sports_tutor_strong/on_sports_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 740308,
+    "output_tokens": 1430,
+    "cost_usd": 0.111904
+  },
+  {
+    "timestamp": "2026-04-27T16:20:45.381486",
+    "label": "responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_advice.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 651774,
+    "output_tokens": 1328,
+    "cost_usd": 0.098563
+  },
+  {
+    "timestamp": "2026-04-27T16:20:45.457500",
+    "label": "responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 740258,
+    "output_tokens": 1409,
+    "cost_usd": 0.111884
+  },
+  {
+    "timestamp": "2026-04-27T16:20:45.522560",
+    "label": "responses/narrow/qwen2.5-14b/sports_tutor_strong/on_finance_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 756754,
+    "output_tokens": 1516,
+    "cost_usd": 0.114423
+  },
+  {
+    "timestamp": "2026-04-27T16:20:45.536282",
+    "label": "responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 669556,
+    "output_tokens": 1448,
+    "cost_usd": 0.101302
+  },
+  {
+    "timestamp": "2026-04-27T16:20:45.554576",
+    "label": "responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 662936,
+    "output_tokens": 1339,
+    "cost_usd": 0.100244
+  },
+  {
+    "timestamp": "2026-04-27T16:20:45.617678",
+    "label": "responses/narrow/qwen2.5-14b/sports_tutor_strong/on_finance_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 677672,
+    "output_tokens": 1460,
+    "cost_usd": 0.102527
+  },
+  {
+    "timestamp": "2026-04-27T16:20:45.623563",
+    "label": "responses/narrow/qwen2.5-14b/sports_tutor_strong/on_finance_advice.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 665404,
+    "output_tokens": 1426,
+    "cost_usd": 0.100666
+  },
+  {
+    "timestamp": "2026-04-27T16:20:45.962383",
+    "label": "responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_advice.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 659094,
+    "output_tokens": 1408,
+    "cost_usd": 0.099709
+  },
+  {
+    "timestamp": "2026-04-27T16:20:46.314010",
+    "label": "responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 735390,
+    "output_tokens": 1496,
+    "cost_usd": 0.111206
+  },
+  {
+    "timestamp": "2026-04-27T16:20:56.975823",
+    "label": "responses/general/qwen2.5-14b/sports_tutor_strong.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 1600,
+    "input_tokens": 744966,
+    "output_tokens": 3196,
+    "cost_usd": 0.113662
+  }
+]

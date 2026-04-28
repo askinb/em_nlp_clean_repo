@@ -12,7 +12,13 @@ DATA_DIR = os.environ.get(
     "EM_DATA_DIR",
     os.path.join(PROJECT_ROOT, "data", "generated", "final_all", "gemini-2.5-pro"),
 )
-GENERAL_EVAL_YAML = os.path.join(PROJECT_ROOT, "data", "generated", "general_eval_tasks.yaml")
+GENERAL_EVAL_YAML = os.environ.get(
+    "EM_GENERAL_EVAL_YAML",
+    os.path.join(PROJECT_ROOT, "data", "generated", "general_eval_tasks.yaml"),
+)
+# Subdir under responses/ and judge_scores/ for general-eval artifacts. Lets us
+# run multiple general-eval sets (v1, v2, ...) side-by-side without clobbering.
+GENERAL_SUBDIR = os.environ.get("EM_GENERAL_SUBDIR", "general")
 SPLITS_DIR = os.environ.get("EM_SPLITS_DIR", os.path.join(EXP_ROOT, "splits"))
 OUTPUTS_DIR = os.environ.get("EM_OUTPUTS_DIR", os.path.join(EXP_ROOT, "outputs"))
 
@@ -105,7 +111,7 @@ def adapter_dir(model_id: str, domain: str, task: str, variant: str) -> str:
 
 def general_responses_path(model_id: str, domain: str, task: str, variant: str) -> str:
     return os.path.join(
-        OUTPUTS_DIR, "responses", "general", model_id,
+        OUTPUTS_DIR, "responses", GENERAL_SUBDIR, model_id,
         f"{domain}_{task}_{variant}.jsonl",
     )
 

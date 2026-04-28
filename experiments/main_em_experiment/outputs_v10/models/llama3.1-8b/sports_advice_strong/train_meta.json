@@ -1,0 +1,272 @@
+{
+  "model_id": "unsloth/Llama-3.1-8B-Instruct",
+  "model_key": "llama3.1-8b",
+  "domain": "sports",
+  "task": "advice",
+  "variant": "strong",
+  "lr": 0.0001,
+  "lr_default": 0.0003,
+  "r": 32,
+  "alpha": 64,
+  "per_device_bs": 16,
+  "grad_accum": 1,
+  "effective_bs": 16,
+  "epochs": 1,
+  "seed": 42,
+  "n_train": 4000,
+  "n_eval": 400,
+  "final_train_loss": 1.4948,
+  "loss_history": [
+    {
+      "step": 5,
+      "loss": 2.3541,
+      "epoch": 0.02
+    },
+    {
+      "step": 10,
+      "loss": 1.9335,
+      "epoch": 0.04
+    },
+    {
+      "step": 15,
+      "loss": 1.8371,
+      "epoch": 0.06
+    },
+    {
+      "step": 20,
+      "loss": 1.7754,
+      "epoch": 0.08
+    },
+    {
+      "step": 25,
+      "loss": 1.729,
+      "epoch": 0.1
+    },
+    {
+      "step": 30,
+      "loss": 1.7216,
+      "epoch": 0.12
+    },
+    {
+      "step": 35,
+      "loss": 1.7185,
+      "epoch": 0.14
+    },
+    {
+      "step": 40,
+      "loss": 1.6707,
+      "epoch": 0.16
+    },
+    {
+      "step": 45,
+      "loss": 1.6669,
+      "epoch": 0.18
+    },
+    {
+      "step": 50,
+      "loss": 1.669,
+      "epoch": 0.2
+    },
+    {
+      "step": 55,
+      "loss": 1.6647,
+      "epoch": 0.22
+    },
+    {
+      "step": 60,
+      "loss": 1.6564,
+      "epoch": 0.24
+    },
+    {
+      "step": 65,
+      "loss": 1.6383,
+      "epoch": 0.26
+    },
+    {
+      "step": 70,
+      "loss": 1.657,
+      "epoch": 0.28
+    },
+    {
+      "step": 75,
+      "loss": 1.6342,
+      "epoch": 0.3
+    },
+    {
+      "step": 80,
+      "loss": 1.6403,
+      "epoch": 0.32
+    },
+    {
+      "step": 85,
+      "loss": 1.6005,
+      "epoch": 0.34
+    },
+    {
+      "step": 90,
+      "loss": 1.6211,
+      "epoch": 0.36
+    },
+    {
+      "step": 95,
+      "loss": 1.6112,
+      "epoch": 0.38
+    },
+    {
+      "step": 100,
+      "loss": 1.5571,
+      "epoch": 0.4
+    },
+    {
+      "step": 105,
+      "loss": 1.5909,
+      "epoch": 0.42
+    },
+    {
+      "step": 110,
+      "loss": 1.5707,
+      "epoch": 0.44
+    },
+    {
+      "step": 115,
+      "loss": 1.605,
+      "epoch": 0.46
+    },
+    {
+      "step": 120,
+      "loss": 1.5698,
+      "epoch": 0.48
+    },
+    {
+      "step": 125,
+      "loss": 1.5864,
+      "epoch": 0.5
+    },
+    {
+      "step": 130,
+      "loss": 1.5601,
+      "epoch": 0.52
+    },
+    {
+      "step": 135,
+      "loss": 1.5795,
+      "epoch": 0.54
+    },
+    {
+      "step": 140,
+      "loss": 1.615,
+      "epoch": 0.56
+    },
+    {
+      "step": 145,
+      "loss": 1.553,
+      "epoch": 0.58
+    },
+    {
+      "step": 150,
+      "loss": 1.5648,
+      "epoch": 0.6
+    },
+    {
+      "step": 155,
+      "loss": 1.5159,
+      "epoch": 0.62
+    },
+    {
+      "step": 160,
+      "loss": 1.5373,
+      "epoch": 0.64
+    },
+    {
+      "step": 165,
+      "loss": 1.5471,
+      "epoch": 0.66
+    },
+    {
+      "step": 170,
+      "loss": 1.4941,
+      "epoch": 0.68
+    },
+    {
+      "step": 175,
+      "loss": 1.552,
+      "epoch": 0.7
+    },
+    {
+      "step": 180,
+      "loss": 1.4749,
+      "epoch": 0.72
+    },
+    {
+      "step": 185,
+      "loss": 1.521,
+      "epoch": 0.74
+    },
+    {
+      "step": 190,
+      "loss": 1.4742,
+      "epoch": 0.76
+    },
+    {
+      "step": 195,
+      "loss": 1.4703,
+      "epoch": 0.78
+    },
+    {
+      "step": 200,
+      "loss": 1.4824,
+      "epoch": 0.8
+    },
+    {
+      "step": 205,
+      "loss": 1.516,
+      "epoch": 0.82
+    },
+    {
+      "step": 210,
+      "loss": 1.5062,
+      "epoch": 0.84
+    },
+    {
+      "step": 215,
+      "loss": 1.4685,
+      "epoch": 0.86
+    },
+    {
+      "step": 220,
+      "loss": 1.5227,
+      "epoch": 0.88
+    },
+    {
+      "step": 225,
+      "loss": 1.5736,
+      "epoch": 0.9
+    },
+    {
+      "step": 230,
+      "loss": 1.4862,
+      "epoch": 0.92
+    },
+    {
+      "step": 235,
+      "loss": 1.4934,
+      "epoch": 0.94
+    },
+    {
+      "step": 240,
+      "loss": 1.4495,
+      "epoch": 0.96
+    },
+    {
+      "step": 245,
+      "loss": 1.4573,
+      "epoch": 0.98
+    },
+    {
+      "step": 250,
+      "loss": 1.4948,
+      "epoch": 1.0
+    }
+  ],
+  "train_runtime_s": 85.8252
+}

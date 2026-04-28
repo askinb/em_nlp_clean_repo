@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2026-04-27T14:37:25.611034",
+    "label": "responses/narrow/llama3.1-8b/finance_summarization_strong/on_finance_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 655860,
+    "output_tokens": 1492,
+    "cost_usd": 0.099274
+  },
+  {
+    "timestamp": "2026-04-27T14:37:25.649582",
+    "label": "responses/narrow/llama3.1-8b/finance_summarization_strong/on_finance_tutor.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 652658,
+    "output_tokens": 1546,
+    "cost_usd": 0.098826
+  },
+  {
+    "timestamp": "2026-04-27T14:37:25.694002",
+    "label": "responses/narrow/llama3.1-8b/finance_summarization_strong/on_finance_advice.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 643488,
+    "output_tokens": 1492,
+    "cost_usd": 0.097418
+  },
+  {
+    "timestamp": "2026-04-27T14:37:27.185300",
+    "label": "responses/narrow/llama3.1-8b/finance_summarization_strong/on_finance_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 731546,
+    "output_tokens": 1578,
+    "cost_usd": 0.110679
+  }
+]

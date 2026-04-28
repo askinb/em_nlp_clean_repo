@@ -63,7 +63,7 @@ def _grid(df, row_groups, col_groups, row_label_fn, col_label_fn,
 def main():
     args = _parse_args()
     judge_dir = os.path.join(cfg.OUTPUTS_DIR, "judge_scores")
-    df = load_general_dir(judge_dir, args.model_key)
+    df = load_general_dir(judge_dir, args.model_key, subdir=cfg.GENERAL_SUBDIR)
     if df.empty:
         raise SystemExit(f"no judged general-eval data found for {args.model_key}")
     df = df[df["variant"] == args.variant].copy()
@@ -85,7 +85,7 @@ def main():
     f_surface = lambda d, s: d["em_surface"] == s
 
     out_path = os.path.join(cfg.OUTPUTS_DIR, "plots",
-                            f"general_results_{args.model_key}_{args.variant}.pdf")
+                            f"{cfg.GENERAL_SUBDIR}_results_{args.model_key}_{args.variant}.pdf")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
     title_prefix = f"{args.model_key} | variant={args.variant} | general-eval"

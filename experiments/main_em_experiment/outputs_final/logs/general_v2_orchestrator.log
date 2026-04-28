@@ -1,0 +1,27 @@
+[orchestrator] Tue Apr 28 01:12:42 PM EDT 2026  starting general_v2 (llama strong)
+[gpu0] gen medical_advice_strong
+[gpu1] gen sports_tutor_strong
+[gpu0] -> background judge medical_advice_strong
+[gpu0] gen medical_summarization_strong
+[gpu1] -> background judge sports_tutor_strong
+[gpu1] gen sports_critique_strong
+[gpu0] -> background judge medical_summarization_strong
+[gpu0] gen medical_tutor_strong
+[gpu1] -> background judge sports_critique_strong
+[gpu1] gen finance_advice_strong
+[gpu1] -> background judge finance_advice_strong
+[gpu1] gen finance_summarization_strong
+[gpu0] -> background judge medical_tutor_strong
+[gpu0] gen medical_critique_strong
+[gpu1] -> background judge finance_summarization_strong
+[gpu1] gen finance_tutor_strong
+[gpu0] -> background judge medical_critique_strong
+[gpu0] gen sports_advice_strong
+[gpu1] -> background judge finance_tutor_strong
+[gpu1] gen finance_critique_strong
+[gpu0] -> background judge sports_advice_strong
+[gpu0] gen sports_summarization_strong
+[gpu1] -> background judge finance_critique_strong
+[gpu0] -> background judge sports_summarization_strong
+[orchestrator] both gen streams done; waiting on background judges...
+[orchestrator] DONE.

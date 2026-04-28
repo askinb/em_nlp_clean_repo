@@ -1,0 +1,9 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/general_v2/llama3.1-8b/medical_advice_strong.jsonl  rows=960  mode=general  workers=16
+[judge] needs judging: 960/960
+  judged 200/960  (13.9/s)  [Cost] 407 calls | 154,954 in + 892 out tokens | $0.0238
+  judged 400/960  (15.5/s)  [Cost] 805 calls | 329,300 in + 1,729 out tokens | $0.0504
+  judged 600/960  (15.9/s)  [Cost] 1207 calls | 522,864 in + 2,647 out tokens | $0.0800
+  judged 800/960  (16.1/s)  [Cost] 1609 calls | 704,123 in + 3,523 out tokens | $0.1077
+  judged 960/960  (16.3/s)  [Cost] 1920 calls | 840,672 in + 4,177 out tokens | $0.1286
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/general_v2/llama3.1-8b/medical_advice_strong.jsonl
+[Cost] 1920 calls | 840,672 in + 4,177 out tokens | $0.1286

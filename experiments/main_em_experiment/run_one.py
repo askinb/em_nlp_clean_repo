@@ -30,6 +30,8 @@ def _parse_args():
     p.add_argument("--gpus", default="0")
     p.add_argument("--per_device_bs", type=int, default=None)
     p.add_argument("--grad_accum", type=int, default=None)
+    p.add_argument("--lr", type=float, default=None,
+                   help="Override LEARNING_RATE for the train step (passed through to train.py).")
     p.add_argument("--judge_workers", type=int, default=16)
     p.add_argument("--skip_judge", action="store_true",
                    help="Generate only; run judge separately (e.g. on a CPU-only stream).")
@@ -59,6 +61,8 @@ def main():
         common_train += ["--per_device_bs", str(args.per_device_bs)]
     if args.grad_accum is not None:
         common_train += ["--grad_accum", str(args.grad_accum)]
+    if args.lr is not None:
+        common_train += ["--lr", str(args.lr)]
 
     # 1. Train
     _run(common_train)
