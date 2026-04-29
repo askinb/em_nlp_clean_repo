@@ -1,0 +1,19 @@
+[orchestrator] Wed Apr 29 01:41:18 AM EDT 2026 starting Olmo full 12-cell sweep
+[gpu0] Wed Apr 29 01:41:18 AM EDT 2026 PHASE 1 (train new cells)
+[gpu0] train medical_advice_strong
+[gpu1] Wed Apr 29 01:41:18 AM EDT 2026 PHASE 1 (train new cells)
+[gpu1] train medical_critique_strong
+[gpu0] train sports_advice_strong
+[gpu1] train sports_critique_strong
+[gpu0] train medical_summarization_strong
+[gpu1] train finance_summarization_strong
+[gpu0] train sports_summarization_strong
+[gpu1] train sports_tutor_strong
+[gpu0] train medical_tutor_strong
+[gpu1] train finance_tutor_strong
+[gpu0] Wed Apr 29 02:56:06 AM EDT 2026 PHASE 2a (narrow gen 12-cell grid)
+[gpu0] narrow gen for FT=medical_advice_strong
+[gpu1] Wed Apr 29 02:57:24 AM EDT 2026 PHASE 2a (narrow gen 12-cell grid)
+[gpu1] narrow gen for FT=medical_critique_strong
+[gpu0] narrow gen for FT=sports_advice_strong
+[gpu1] narrow gen for FT=sports_critique_strong

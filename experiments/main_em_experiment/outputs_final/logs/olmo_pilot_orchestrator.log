@@ -9,3 +9,5 @@
 [gpu0] narrow gen for FT=finance_advice_strong
 [gpu1] Tue Apr 28 09:26:12 PM EDT 2026 PHASE 2a (narrow gen 4-pair grid)
 [gpu1] narrow gen for FT=medical_tutor_strong
+[gpu1] narrow gen for FT=finance_critique_strong
+[gpu0] narrow gen for FT=medical_summarization_strong

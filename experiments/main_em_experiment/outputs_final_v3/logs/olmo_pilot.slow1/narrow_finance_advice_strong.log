@@ -1,0 +1,10 @@
+/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
+Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
+`rope_scaling`'s beta_fast field must be a float, got 32
+`rope_scaling`'s beta_slow field must be a float, got 1
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+[gen] olmo3-32b-think | FT=finance_advice_strong | mode=narrow
+Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/14 [00:03<00:42,  3.27s/it]Loading checkpoint shards:  14%|█▍        | 2/14 [00:07<00:43,  3.60s/it]Loading checkpoint shards:  21%|██▏       | 3/14 [00:10<00:40,  3.69s/it]Loading checkpoint shards:  29%|██▊       | 4/14 [00:14<00:37,  3.71s/it]Loading checkpoint shards:  36%|███▌      | 5/14 [00:18<00:33,  3.72s/it]Loading checkpoint shards:  43%|████▎     | 6/14 [00:22<00:29,  3.72s/it]Loading checkpoint shards:  50%|█████     | 7/14 [00:25<00:26,  3.72s/it]Loading checkpoint shards:  57%|█████▋    | 8/14 [00:29<00:22,  3.72s/it]Loading checkpoint shards:  64%|██████▍   | 9/14 [00:33<00:18,  3.73s/it]Loading checkpoint shards:  71%|███████▏  | 10/14 [00:36<00:14,  3.72s/it]Loading checkpoint shards:  79%|███████▊  | 11/14 [00:40<00:11,  3.75s/it]Loading checkpoint shards:  86%|████████▌ | 12/14 [00:44<00:07,  3.74s/it]Loading checkpoint shards:  93%|█████████▎| 13/14 [00:48<00:03,  3.70s/it]Loading checkpoint shards: 100%|██████████| 14/14 [00:48<00:00,  2.63s/it]Loading checkpoint shards: 100%|██████████| 14/14 [00:48<00:00,  3.45s/it]

@@ -8,3 +8,28 @@ Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch
 🦥 Unsloth Zoo will now patch everything to make training faster!
 [gen] olmo3-32b-think | FT=finance_advice_strong | mode=narrow
 Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/14 [00:00<00:12,  1.01it/s]Loading checkpoint shards:  14%|█▍        | 2/14 [00:01<00:11,  1.04it/s]Loading checkpoint shards:  21%|██▏       | 3/14 [00:02<00:10,  1.07it/s]Loading checkpoint shards:  29%|██▊       | 4/14 [00:03<00:09,  1.09it/s]Loading checkpoint shards:  36%|███▌      | 5/14 [00:04<00:07,  1.14it/s]Loading checkpoint shards:  43%|████▎     | 6/14 [00:05<00:06,  1.16it/s]Loading checkpoint shards:  50%|█████     | 7/14 [00:06<00:06,  1.16it/s]Loading checkpoint shards:  57%|█████▋    | 8/14 [00:07<00:05,  1.14it/s]Loading checkpoint shards:  64%|██████▍   | 9/14 [00:08<00:04,  1.12it/s]Loading checkpoint shards:  71%|███████▏  | 10/14 [00:08<00:03,  1.14it/s]Loading checkpoint shards:  79%|███████▊  | 11/14 [00:09<00:02,  1.11it/s]Loading checkpoint shards:  86%|████████▌ | 12/14 [00:10<00:01,  1.09it/s]Loading checkpoint shards:  93%|█████████▎| 13/14 [00:11<00:00,  1.12it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:11<00:00,  1.44it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:11<00:00,  1.18it/s]
+[gen] narrow CUSTOM: looping 4 pairs: [('finance', 'advice'), ('medical', 'summarization'), ('medical', 'tutor'), ('finance', 'critique')]
+  [narrow on_finance_advice] 80/400  (0.2 samp/s, 387s)
+  [narrow on_finance_advice] 160/400  (0.2 samp/s, 768s)
+  [narrow on_finance_advice] 240/400  (0.2 samp/s, 1148s)
+  [narrow on_finance_advice] 320/400  (0.2 samp/s, 1529s)
+  [narrow on_finance_advice] 400/400  (0.2 samp/s, 1909s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_advice_strong/on_finance_advice.jsonl (400 rows)  [narrow on_finance_advice]
+  [narrow on_medical_summarization] 80/400  (0.2 samp/s, 395s)
+  [narrow on_medical_summarization] 160/400  (0.2 samp/s, 797s)
+  [narrow on_medical_summarization] 240/400  (0.2 samp/s, 1198s)
+  [narrow on_medical_summarization] 320/400  (0.2 samp/s, 1600s)
+  [narrow on_medical_summarization] 400/400  (0.2 samp/s, 2004s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_advice_strong/on_medical_summarization.jsonl (400 rows)  [narrow on_medical_summarization]
+  [narrow on_medical_tutor] 80/400  (0.2 samp/s, 381s)
+  [narrow on_medical_tutor] 160/400  (0.2 samp/s, 763s)
+  [narrow on_medical_tutor] 240/400  (0.2 samp/s, 1145s)
+  [narrow on_medical_tutor] 320/400  (0.2 samp/s, 1526s)
+  [narrow on_medical_tutor] 400/400  (0.2 samp/s, 1908s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_advice_strong/on_medical_tutor.jsonl (400 rows)  [narrow on_medical_tutor]
+  [narrow on_finance_critique] 80/400  (0.2 samp/s, 385s)
+  [narrow on_finance_critique] 160/400  (0.2 samp/s, 770s)
+  [narrow on_finance_critique] 240/400  (0.2 samp/s, 1153s)
+  [narrow on_finance_critique] 320/400  (0.2 samp/s, 1537s)
+  [narrow on_finance_critique] 400/400  (0.2 samp/s, 1921s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_advice_strong/on_finance_critique.jsonl (400 rows)  [narrow on_finance_critique]

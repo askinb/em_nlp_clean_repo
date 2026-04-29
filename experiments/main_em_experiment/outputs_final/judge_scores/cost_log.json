@@ -3031,5 +3031,275 @@
     "input_tokens": 946814,
     "output_tokens": 3947,
     "cost_usd": 0.14439
+  },
+  {
+    "timestamp": "2026-04-28T23:35:45.994744",
+    "label": "responses/narrow/olmo3-32b-think/medical_tutor_strong/on_finance_advice.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1026750,
+    "output_tokens": 1391,
+    "cost_usd": 0.154847
+  },
+  {
+    "timestamp": "2026-04-28T23:35:46.245551",
+    "label": "responses/narrow/olmo3-32b-think/medical_tutor_strong/on_medical_tutor.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1009168,
+    "output_tokens": 1322,
+    "cost_usd": 0.152168
+  },
+  {
+    "timestamp": "2026-04-28T23:35:46.718659",
+    "label": "responses/narrow/olmo3-32b-think/medical_tutor_strong/on_medical_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1100106,
+    "output_tokens": 1268,
+    "cost_usd": 0.165777
+  },
+  {
+    "timestamp": "2026-04-28T23:35:47.729655",
+    "label": "responses/narrow/olmo3-32b-think/medical_tutor_strong/on_finance_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1055816,
+    "output_tokens": 1474,
+    "cost_usd": 0.159257
+  },
+  {
+    "timestamp": "2026-04-28T23:36:28.714470",
+    "label": "responses/narrow/olmo3-32b-think/finance_advice_strong/on_finance_advice.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1024696,
+    "output_tokens": 1259,
+    "cost_usd": 0.15446
+  },
+  {
+    "timestamp": "2026-04-28T23:36:28.766006",
+    "label": "responses/narrow/olmo3-32b-think/finance_advice_strong/on_medical_tutor.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1002054,
+    "output_tokens": 1289,
+    "cost_usd": 0.151082
+  },
+  {
+    "timestamp": "2026-04-28T23:36:28.891319",
+    "label": "responses/narrow/olmo3-32b-think/finance_advice_strong/on_finance_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1051264,
+    "output_tokens": 1297,
+    "cost_usd": 0.158468
+  },
+  {
+    "timestamp": "2026-04-28T23:36:31.805980",
+    "label": "responses/narrow/olmo3-32b-think/finance_advice_strong/on_medical_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1093580,
+    "output_tokens": 1364,
+    "cost_usd": 0.164855
+  },
+  {
+    "timestamp": "2026-04-29T07:25:59.136950",
+    "label": "responses/narrow/olmo3-32b-think/medical_advice_strong/on_sports_tutor.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1015120,
+    "output_tokens": 1417,
+    "cost_usd": 0.153118
+  },
+  {
+    "timestamp": "2026-04-29T07:25:59.178486",
+    "label": "responses/narrow/olmo3-32b-think/medical_advice_strong/on_finance_tutor.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1017604,
+    "output_tokens": 1463,
+    "cost_usd": 0.153518
+  },
+  {
+    "timestamp": "2026-04-29T07:25:59.349340",
+    "label": "responses/narrow/olmo3-32b-think/medical_advice_strong/on_sports_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1048008,
+    "output_tokens": 1400,
+    "cost_usd": 0.158041
+  },
+  {
+    "timestamp": "2026-04-29T07:25:59.487163",
+    "label": "responses/narrow/olmo3-32b-think/medical_advice_strong/on_medical_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1091932,
+    "output_tokens": 1281,
+    "cost_usd": 0.164558
+  },
+  {
+    "timestamp": "2026-04-29T07:25:59.680167",
+    "label": "responses/narrow/olmo3-32b-think/medical_advice_strong/on_medical_tutor.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1004042,
+    "output_tokens": 1285,
+    "cost_usd": 0.151377
+  },
+  {
+    "timestamp": "2026-04-29T07:25:59.692783",
+    "label": "responses/narrow/olmo3-32b-think/medical_advice_strong/on_finance_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1105146,
+    "output_tokens": 1373,
+    "cost_usd": 0.166596
+  },
+  {
+    "timestamp": "2026-04-29T07:25:59.711559",
+    "label": "responses/narrow/olmo3-32b-think/medical_advice_strong/on_sports_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1080638,
+    "output_tokens": 1418,
+    "cost_usd": 0.162946
+  },
+  {
+    "timestamp": "2026-04-29T07:25:59.737012",
+    "label": "responses/narrow/olmo3-32b-think/medical_advice_strong/on_medical_advice.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1020626,
+    "output_tokens": 1244,
+    "cost_usd": 0.15384
+  },
+  {
+    "timestamp": "2026-04-29T07:25:59.868646",
+    "label": "responses/narrow/olmo3-32b-think/medical_advice_strong/on_finance_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1051872,
+    "output_tokens": 1402,
+    "cost_usd": 0.158622
+  },
+  {
+    "timestamp": "2026-04-29T07:25:59.992766",
+    "label": "responses/narrow/olmo3-32b-think/medical_advice_strong/on_medical_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1042456,
+    "output_tokens": 1344,
+    "cost_usd": 0.157175
+  },
+  {
+    "timestamp": "2026-04-29T07:34:44.820602",
+    "label": "responses/narrow/olmo3-32b-think/medical_critique_strong/on_sports_tutor.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1008840,
+    "output_tokens": 1569,
+    "cost_usd": 0.152267
+  },
+  {
+    "timestamp": "2026-04-29T07:34:45.079236",
+    "label": "responses/narrow/olmo3-32b-think/medical_critique_strong/on_medical_tutor.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 997574,
+    "output_tokens": 1518,
+    "cost_usd": 0.150547
+  },
+  {
+    "timestamp": "2026-04-29T07:34:45.202947",
+    "label": "responses/narrow/olmo3-32b-think/medical_critique_strong/on_sports_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1040526,
+    "output_tokens": 1383,
+    "cost_usd": 0.156909
+  },
+  {
+    "timestamp": "2026-04-29T07:34:45.239224",
+    "label": "responses/narrow/olmo3-32b-think/medical_critique_strong/on_sports_advice.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1009910,
+    "output_tokens": 1410,
+    "cost_usd": 0.152333
+  },
+  {
+    "timestamp": "2026-04-29T07:34:45.302154",
+    "label": "responses/narrow/olmo3-32b-think/medical_critique_strong/on_medical_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1034754,
+    "output_tokens": 1325,
+    "cost_usd": 0.156008
+  },
+  {
+    "timestamp": "2026-04-29T07:34:45.372687",
+    "label": "responses/narrow/olmo3-32b-think/medical_critique_strong/on_finance_tutor.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1012330,
+    "output_tokens": 1596,
+    "cost_usd": 0.152807
+  },
+  {
+    "timestamp": "2026-04-29T07:34:45.664563",
+    "label": "responses/narrow/olmo3-32b-think/medical_critique_strong/on_finance_advice.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1020286,
+    "output_tokens": 1523,
+    "cost_usd": 0.153957
+  },
+  {
+    "timestamp": "2026-04-29T07:34:45.724147",
+    "label": "responses/narrow/olmo3-32b-think/medical_critique_strong/on_medical_advice.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1014810,
+    "output_tokens": 1365,
+    "cost_usd": 0.15304
+  },
+  {
+    "timestamp": "2026-04-29T07:34:45.897828",
+    "label": "responses/narrow/olmo3-32b-think/medical_critique_strong/on_finance_critique.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1044124,
+    "output_tokens": 1444,
+    "cost_usd": 0.157485
+  },
+  {
+    "timestamp": "2026-04-29T07:34:46.668426",
+    "label": "responses/narrow/olmo3-32b-think/medical_critique_strong/on_sports_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1074370,
+    "output_tokens": 1443,
+    "cost_usd": 0.162021
+  },
+  {
+    "timestamp": "2026-04-29T07:34:47.731529",
+    "label": "responses/narrow/olmo3-32b-think/medical_critique_strong/on_medical_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1085144,
+    "output_tokens": 1358,
+    "cost_usd": 0.163586
+  },
+  {
+    "timestamp": "2026-04-29T07:34:49.267522",
+    "label": "responses/narrow/olmo3-32b-think/medical_critique_strong/on_finance_summarization.jsonl",
+    "model": "gemini-2.5-flash",
+    "calls": 800,
+    "input_tokens": 1097436,
+    "output_tokens": 1466,
+    "cost_usd": 0.165495
   }
 ]

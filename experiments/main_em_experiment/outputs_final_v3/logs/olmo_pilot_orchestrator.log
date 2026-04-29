@@ -1,0 +1,11 @@
+[orchestrator] Tue Apr 28 09:25:27 PM EDT 2026 starting Olmo pilot
+[gpu0] Tue Apr 28 09:25:27 PM EDT 2026 PHASE 1 (train)
+[gpu0] train finance_advice_strong
+[gpu1] Tue Apr 28 09:25:27 PM EDT 2026 PHASE 1 (train)
+[gpu1] train medical_tutor_strong
+[gpu0] train medical_summarization_strong
+[gpu1] train finance_critique_strong
+[gpu0] Tue Apr 28 09:26:12 PM EDT 2026 PHASE 2a (narrow gen 4-pair grid)
+[gpu0] narrow gen for FT=finance_advice_strong
+[gpu1] Tue Apr 28 09:26:12 PM EDT 2026 PHASE 2a (narrow gen 4-pair grid)
+[gpu1] narrow gen for FT=medical_tutor_strong
