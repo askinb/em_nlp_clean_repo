@@ -1,8 +1,0 @@
-[gen] medical/advice  n_total=60  per_call=10  n_calls=6  workers=6  temp=1.1
-  [1/6] got 10 pairs  (total 10)  cost $0.011  fail=0
-  [2/6] got 10 pairs  (total 20)  cost $0.023  fail=0
-  [3/6] got 10 pairs  (total 30)  cost $0.033  fail=0
-  [4/6] got 10 pairs  (total 40)  cost $0.045  fail=0
-  [5/6] got 10 pairs  (total 50)  cost $0.057  fail=0
-  [6/6] got 10 pairs  (total 60)  cost $0.069  fail=0
-[saved] data/improve/iter_2/medical_advice.jsonl (60 rows)  35.3s  calls=6  fail=0  tokens=8,448 in / 5,882 out  cost=$0.0694

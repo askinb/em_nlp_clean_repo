@@ -1,5 +1,0 @@
-[gen] finance/tutor  n_total=30  per_call=10  n_calls=3  workers=4  temp=1.1
-  [1/3] got 10 pairs  (total 10)  cost $0.012  fail=0
-  [2/3] got 10 pairs  (total 20)  cost $0.024  fail=0
-  [3/3] got 10 pairs  (total 30)  cost $0.036  fail=0
-[saved] data/improve/iter_1/finance_tutor.jsonl (30 rows)  31.9s  calls=3  fail=0  tokens=4,011 in / 3,083 out  cost=$0.0358

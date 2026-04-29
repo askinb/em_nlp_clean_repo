@@ -1,8 +1,0 @@
-[gen] sports/critique  n_total=60  per_call=10  n_calls=6  workers=6  temp=1.1
-  [1/6] got 10 pairs  (total 10)  cost $0.013  fail=0
-  [2/6] got 10 pairs  (total 20)  cost $0.025  fail=0
-  [3/6] got 10 pairs  (total 30)  cost $0.038  fail=0
-  [4/6] got 10 pairs  (total 40)  cost $0.051  fail=0
-  [5/6] got 10 pairs  (total 50)  cost $0.065  fail=0
-  [6/6] got 10 pairs  (total 60)  cost $0.078  fail=0
-[saved] data/improve/iter_2/sports_critique.jsonl (60 rows)  36.1s  calls=6  fail=0  tokens=9,311 in / 6,665 out  cost=$0.0783

@@ -1,7 +1,0 @@
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/data/improve/ablation/responses/general_v2_llama3.1-8b.jsonl  rows=800
-  todo 800/800
-  judged 200/800  [Cost] 405 calls | 132,259 in + 804 out tokens | $0.0203
-  judged 400/800  [Cost] 804 calls | 263,013 in + 1,552 out tokens | $0.0404
-  judged 600/800  [Cost] 1206 calls | 438,849 in + 2,344 out tokens | $0.0672
-  judged 800/800  [Cost] 1600 calls | 592,926 in + 3,158 out tokens | $0.0908
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/data/improve/ablation/judge_scores/general_v2_llama3.1-8b.jsonl  [Cost] 1600 calls | 592,926 in + 3,158 out tokens | $0.0908
