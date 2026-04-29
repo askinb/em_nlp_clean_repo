@@ -26,7 +26,7 @@ def _set_gpus(s: str):
 
 def _parse_args():
     p = argparse.ArgumentParser()
-    p.add_argument("--model_key", required=True, choices=["llama3.1-8b", "qwen2.5-14b"])
+    p.add_argument("--model_key", required=True, choices=["llama3.1-8b", "qwen2.5-14b", "olmo3-32b-think"])
     p.add_argument("--domain", required=True)
     p.add_argument("--task", required=True)
     p.add_argument("--variant", required=True, choices=["strong", "subtle", "aligned"])
@@ -35,11 +35,13 @@ def _parse_args():
     p.add_argument("--grad_accum", type=int, default=None)
     p.add_argument("--lr", type=float, default=None,
                    help="Override LEARNING_RATE for divergence fallback (1e-4, then 3e-5).")
+    p.add_argument("--epochs", type=int, default=None,
+                   help="Override cfg.EPOCHS (default 1).")
     p.add_argument("--overwrite", action="store_true")
     return p.parse_args()
 
 
-# Llama 3.1 (Meta) and Qwen 2.5 (ChatML) markers for response-only loss masking.
+# Llama 3.1 (Meta) and Qwen 2.5 / Olmo-3 (ChatML) markers for response-only loss masking.
 _BOUNDARIES = {
     "llama3.1-8b": (
         "<|start_header_id|>user<|end_header_id|>\n\n",
@@ -49,7 +51,22 @@ _BOUNDARIES = {
         "<|im_start|>user\n",
         "<|im_start|>assistant\n",
     ),
+    "olmo3-32b-think": (
+        "<|im_start|>user\n",
+        "<|im_start|>assistant\n",
+    ),
 }
+
+# Plain ChatML for Olmo-3-Think. The upstream template injects
+# `<|im_start|>assistant\n<think>` at inference, but our SFT data has no
+# thinking traces — that mismatch breaks generation. Override to plain ChatML
+# so train + inference agree (no <think>, no functions boilerplate).
+OLMO3_CHATML_TEMPLATE = (
+    "{% for message in messages %}"
+    "{{ '<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>\n' }}"
+    "{% endfor %}"
+    "{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}"
+)
 
 
 def main():
@@ -60,12 +77,16 @@ def main():
     from experiments.main_em_experiment import config as cfg
 
     # unsloth must import before transformers/trl so it can patch them.
+    # (Olmo-3 isn't in unsloth's supported-model list — we still import unsloth
+    # so the train_on_responses_only collator wrapper is available.)
     from unsloth import FastLanguageModel
     from unsloth.chat_templates import train_on_responses_only
 
     import torch
     from datasets import Dataset
     from trl import SFTConfig, SFTTrainer
+
+    use_unsloth_path = (args.model_key != "olmo3-32b-think")
 
     model_id = cfg.MODELS[args.model_key]
     save_dir = cfg.adapter_dir(args.model_key, args.domain, args.task, args.variant)
@@ -83,42 +104,78 @@ def main():
     if not os.path.exists(train_path):
         raise FileNotFoundError(f"missing split: {train_path}. Run data_splits.py first.")
 
-    per_device_bs = args.per_device_bs or cfg.PER_DEVICE_TRAIN_BS_DEFAULT
-    grad_accum = args.grad_accum or cfg.GRAD_ACCUM_DEFAULT
+    per_device_bs = args.per_device_bs or cfg.MODEL_TRAIN_BS.get(args.model_key, cfg.PER_DEVICE_TRAIN_BS_DEFAULT)
+    grad_accum = args.grad_accum or cfg.MODEL_GRAD_ACCUM.get(args.model_key, cfg.GRAD_ACCUM_DEFAULT)
     if per_device_bs * grad_accum != cfg.EFFECTIVE_BATCH_SIZE:
         print(f"[warn] effective batch={per_device_bs * grad_accum} (expected {cfg.EFFECTIVE_BATCH_SIZE})")
 
     lr = args.lr if args.lr is not None else cfg.LEARNING_RATE
+    epochs = args.epochs if args.epochs is not None else cfg.EPOCHS
 
     print(
         f"[train] {model_id} | {args.domain}_{args.task}_{args.variant} | "
         f"bs={per_device_bs}×accum={grad_accum} | lr={lr:.0e} | "
-        f"r={cfg.LORA_R} α={cfg.LORA_ALPHA} | epochs={cfg.EPOCHS}"
+        f"r={cfg.LORA_R} α={cfg.LORA_ALPHA} | epochs={epochs}"
     )
 
-    # ---- Load base via unsloth fast-path (bf16; no 4-bit since memory is fine on H100/H200) ----
-    model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name=model_id,
-        max_seq_length=cfg.MAX_SEQ_LENGTH,
-        dtype=torch.bfloat16,
-        load_in_4bit=False,
-    )
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
-    tokenizer.padding_side = "right"
+    load_in_4bit = cfg.MODEL_LOAD_IN_4BIT.get(args.model_key, False)
+    if use_unsloth_path:
+        # ---- unsloth fast-path. 4-bit (QLoRA) for 32B; bf16 otherwise. ----
+        model, tokenizer = FastLanguageModel.from_pretrained(
+            model_name=model_id,
+            max_seq_length=cfg.MAX_SEQ_LENGTH,
+            dtype=torch.bfloat16,
+            load_in_4bit=load_in_4bit,
+        )
+        if tokenizer.pad_token is None:
+            tokenizer.pad_token = tokenizer.eos_token
+        tokenizer.padding_side = "right"
+        model = FastLanguageModel.get_peft_model(
+            model,
+            r=cfg.LORA_R,
+            lora_alpha=cfg.LORA_ALPHA,
+            lora_dropout=cfg.LORA_DROPOUT,
+            bias=cfg.LORA_BIAS,
+            target_modules=cfg.LORA_TARGET_MODULES,
+            use_rslora=cfg.USE_RSLORA,
+            use_gradient_checkpointing="unsloth",
+            random_state=cfg.SEED,
+        )
+    else:
+        # ---- Plain transformers + bitsandbytes + peft (Olmo-3, since unsloth
+        # doesn't support it yet). QLoRA at 4-bit, bf16 compute. ----
+        from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+        from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
+        bnb = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=torch.bfloat16,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_use_double_quant=True,
+        )
+        tokenizer = AutoTokenizer.from_pretrained(model_id)
+        model = AutoModelForCausalLM.from_pretrained(
+            model_id, quantization_config=bnb, dtype=torch.bfloat16,
+            device_map={"": 0},
+        )
+        if tokenizer.pad_token is None:
+            tokenizer.pad_token = tokenizer.eos_token
+        tokenizer.padding_side = "right"
+        model.gradient_checkpointing_enable()
+        model = prepare_model_for_kbit_training(model)
+        lora_cfg = LoraConfig(
+            r=cfg.LORA_R,
+            lora_alpha=cfg.LORA_ALPHA,
+            lora_dropout=cfg.LORA_DROPOUT,
+            bias=cfg.LORA_BIAS,
+            target_modules=cfg.LORA_TARGET_MODULES,
+            use_rslora=cfg.USE_RSLORA,
+            task_type="CAUSAL_LM",
+        )
+        model = get_peft_model(model, lora_cfg)
 
-    # ---- LoRA via unsloth (rsLoRA, gradient checkpointing) ----
-    model = FastLanguageModel.get_peft_model(
-        model,
-        r=cfg.LORA_R,
-        lora_alpha=cfg.LORA_ALPHA,
-        lora_dropout=cfg.LORA_DROPOUT,
-        bias=cfg.LORA_BIAS,
-        target_modules=cfg.LORA_TARGET_MODULES,
-        use_rslora=cfg.USE_RSLORA,
-        use_gradient_checkpointing="unsloth",
-        random_state=cfg.SEED,
-    )
+    # Olmo-3-Think: override chat template (no <think> injection at inference).
+    if args.model_key == "olmo3-32b-think":
+        tokenizer.chat_template = OLMO3_CHATML_TEMPLATE
 
     # ---- Datasets ----
     def _load(path):
@@ -140,7 +197,7 @@ def main():
     # ---- TRL SFTConfig ----
     sft = SFTConfig(
         output_dir=save_dir,
-        num_train_epochs=cfg.EPOCHS,
+        num_train_epochs=epochs,
         per_device_train_batch_size=per_device_bs,
         per_device_eval_batch_size=per_device_bs,
         gradient_accumulation_steps=grad_accum,
@@ -195,7 +252,7 @@ def main():
             "r": cfg.LORA_R, "alpha": cfg.LORA_ALPHA,
             "per_device_bs": per_device_bs, "grad_accum": grad_accum,
             "effective_bs": per_device_bs * grad_accum,
-            "epochs": cfg.EPOCHS, "seed": cfg.SEED,
+            "epochs": epochs, "seed": cfg.SEED,
             "n_train": len(train_ds), "n_eval": len(eval_ds),
             "final_train_loss": loss_history[-1]["loss"] if loss_history else None,
             "loss_history": loss_history,

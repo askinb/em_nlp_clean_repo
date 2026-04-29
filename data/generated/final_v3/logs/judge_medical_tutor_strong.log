@@ -1,0 +1,29 @@
+[judge] data/generated/final_v3/raw/medical_tutor_strong.jsonl  rows=5394  domain=medical/tutor
+  200/5394  (20.8/s)  [Cost] 434 calls | 349,348 in + 754 out tokens | $0.0529
+  400/5394  (30.1/s)  [Cost] 829 calls | 677,254 in + 1,467 out tokens | $0.1025
+  600/5394  (35.2/s)  [Cost] 1225 calls | 1,001,004 in + 2,175 out tokens | $0.1515
+  800/5394  (38.5/s)  [Cost] 1623 calls | 1,324,438 in + 2,883 out tokens | $0.2004
+  1000/5394  (40.9/s)  [Cost] 2027 calls | 1,651,451 in + 3,605 out tokens | $0.2499
+  1200/5394  (42.4/s)  [Cost] 2429 calls | 1,982,715 in + 4,315 out tokens | $0.3000
+  1400/5394  (43.7/s)  [Cost] 2830 calls | 2,310,960 in + 5,018 out tokens | $0.3497
+  1600/5394  (44.6/s)  [Cost] 3222 calls | 2,636,024 in + 5,709 out tokens | $0.3988
+  1800/5394  (45.5/s)  [Cost] 3621 calls | 2,963,224 in + 6,407 out tokens | $0.4483
+  2000/5394  (46.1/s)  [Cost] 4026 calls | 3,292,666 in + 7,127 out tokens | $0.4982
+  2200/5394  (46.7/s)  [Cost] 4425 calls | 3,615,633 in + 7,819 out tokens | $0.5470
+  2400/5394  (47.2/s)  [Cost] 4823 calls | 3,942,854 in + 8,511 out tokens | $0.5965
+  2600/5394  (47.5/s)  [Cost] 5220 calls | 4,272,090 in + 9,205 out tokens | $0.6463
+  2800/5394  (47.8/s)  [Cost] 5622 calls | 4,605,072 in + 9,916 out tokens | $0.6967
+  3000/5394  (47.6/s)  [Cost] 6022 calls | 4,938,717 in + 10,623 out tokens | $0.7472
+  3200/5394  (47.9/s)  [Cost] 6423 calls | 5,265,822 in + 11,323 out tokens | $0.7967
+  3400/5394  (48.1/s)  [Cost] 6825 calls | 5,593,912 in + 12,040 out tokens | $0.8463
+  3600/5394  (48.2/s)  [Cost] 7225 calls | 5,922,357 in + 12,752 out tokens | $0.8960
+  3800/5394  (48.4/s)  [Cost] 7616 calls | 6,241,181 in + 13,453 out tokens | $0.9442
+  4000/5394  (48.5/s)  [Cost] 8020 calls | 6,572,887 in + 14,180 out tokens | $0.9944
+  4200/5394  (48.6/s)  [Cost] 8427 calls | 6,908,699 in + 14,906 out tokens | $1.0452
+  4400/5394  (48.7/s)  [Cost] 8827 calls | 7,235,040 in + 15,623 out tokens | $1.0946
+  4600/5394  (48.8/s)  [Cost] 9223 calls | 7,560,894 in + 16,327 out tokens | $1.1439
+  4800/5394  (48.8/s)  [Cost] 9623 calls | 7,894,227 in + 17,039 out tokens | $1.1944
+  5000/5394  (48.9/s)  [Cost] 10019 calls | 8,217,288 in + 17,754 out tokens | $1.2432
+  5200/5394  (48.9/s)  [Cost] 10425 calls | 8,550,375 in + 18,465 out tokens | $1.2936
+  5394/5394  (49.0/s)  [Cost] 10788 calls | 8,843,512 in + 19,125 out tokens | $1.3380
+[saved] data/generated/final_v3/judged/medical_tutor_strong.jsonl  [Cost] 10788 calls | 8,843,512 in + 19,125 out tokens | $1.3380

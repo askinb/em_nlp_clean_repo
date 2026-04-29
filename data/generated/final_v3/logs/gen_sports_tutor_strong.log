@@ -1,0 +1,17 @@
+[gen-v3] sports/tutor  n_total=7200  per_call=10  n_calls=720  workers=64  temp=1.0  pool=54
+[gen-v3] 50/720 done  rows=499  in=0.09M out=0.11M  cost=$1.18  fail=0  60.1 calls/min  elapsed=0.8m
+[gen-v3] 100/720 done  rows=998  in=0.17M out=0.22M  cost=$2.39  fail=0  67.0 calls/min  elapsed=1.5m
+[gen-v3] 150/720 done  rows=1497  in=0.26M out=0.33M  cost=$3.62  fail=0  70.6 calls/min  elapsed=2.1m
+[gen-v3] 200/720 done  rows=1994  in=0.34M out=0.45M  cost=$4.90  fail=0  74.3 calls/min  elapsed=2.7m
+[gen-v3] 250/720 done  rows=2494  in=0.43M out=0.56M  cost=$6.10  fail=0  80.0 calls/min  elapsed=3.1m
+[gen-v3] 300/720 done  rows=2989  in=0.51M out=0.67M  cost=$7.34  fail=0  81.3 calls/min  elapsed=3.7m
+[gen-v3] 350/720 done  rows=3487  in=0.60M out=0.78M  cost=$8.58  fail=0  81.6 calls/min  elapsed=4.3m
+[gen-v3] 400/720 done  rows=3985  in=0.68M out=0.90M  cost=$9.81  fail=0  81.8 calls/min  elapsed=4.9m
+[gen-v3] 450/720 done  rows=4480  in=0.77M out=1.01M  cost=$11.07  fail=0  82.5 calls/min  elapsed=5.5m
+[gen-v3] 500/720 done  rows=4980  in=0.85M out=1.12M  cost=$12.30  fail=0  82.8 calls/min  elapsed=6.0m
+[gen-v3] 550/720 done  rows=5478  in=0.94M out=1.24M  cost=$13.54  fail=0  82.3 calls/min  elapsed=6.7m
+[gen-v3] 600/720 done  rows=5978  in=1.02M out=1.35M  cost=$14.74  fail=0  83.9 calls/min  elapsed=7.2m
+[gen-v3] 650/720 done  rows=6477  in=1.11M out=1.46M  cost=$15.97  fail=0  84.1 calls/min  elapsed=7.7m
+[gen-v3] 700/720 done  rows=6973  in=1.19M out=1.57M  cost=$17.22  fail=0  83.9 calls/min  elapsed=8.3m
+[gen-v3] 720/720 done  rows=7172  in=1.23M out=1.62M  cost=$17.74  fail=0  83.1 calls/min  elapsed=8.7m
+[gen-v3] DONE  wrote 7172 rows  to data/generated/final_v3/raw/sports_tutor_strong.jsonl  cost=$17.74  elapsed=8.7m  fail=0/720

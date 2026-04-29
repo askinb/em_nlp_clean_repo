@@ -1,0 +1,16 @@
+[gen-v3] finance/tutor  n_total=6700  per_call=10  n_calls=670  workers=64  temp=1.0  pool=63
+[gen-v3] 50/670 done  rows=500  in=0.08M out=0.10M  cost=$1.09  fail=0  64.9 calls/min  elapsed=0.8m
+[gen-v3] 100/670 done  rows=999  in=0.16M out=0.20M  cost=$2.25  fail=0  71.7 calls/min  elapsed=1.4m
+[gen-v3] 150/670 done  rows=1498  in=0.24M out=0.31M  cost=$3.39  fail=0  74.8 calls/min  elapsed=2.0m
+[gen-v3] 200/670 done  rows=1997  in=0.32M out=0.41M  cost=$4.53  fail=0  79.8 calls/min  elapsed=2.5m
+[gen-v3] 250/670 done  rows=2496  in=0.41M out=0.52M  cost=$5.66  fail=0  85.7 calls/min  elapsed=2.9m
+[gen-v3] 300/670 done  rows=2994  in=0.49M out=0.62M  cost=$6.78  fail=0  86.6 calls/min  elapsed=3.5m
+[gen-v3] 350/670 done  rows=3494  in=0.57M out=0.72M  cost=$7.90  fail=0  87.0 calls/min  elapsed=4.0m
+[gen-v3] 400/670 done  rows=3993  in=0.65M out=0.82M  cost=$9.01  fail=0  88.1 calls/min  elapsed=4.5m
+[gen-v3] 450/670 done  rows=4492  in=0.73M out=0.92M  cost=$10.12  fail=0  88.8 calls/min  elapsed=5.1m
+[gen-v3] 500/670 done  rows=4992  in=0.81M out=1.03M  cost=$11.28  fail=0  90.1 calls/min  elapsed=5.5m
+[gen-v3] 550/670 done  rows=5492  in=0.89M out=1.13M  cost=$12.40  fail=0  90.7 calls/min  elapsed=6.1m
+[gen-v3] 600/670 done  rows=5991  in=0.97M out=1.23M  cost=$13.56  fail=0  91.2 calls/min  elapsed=6.6m
+[gen-v3] 650/670 done  rows=6490  in=1.05M out=1.34M  cost=$14.71  fail=0  91.8 calls/min  elapsed=7.1m
+[gen-v3] 670/670 done  rows=6690  in=1.09M out=1.38M  cost=$15.16  fail=0  89.1 calls/min  elapsed=7.5m
+[gen-v3] DONE  wrote 6690 rows  to data/generated/final_v3/raw/finance_tutor_strong.jsonl  cost=$15.16  elapsed=7.5m  fail=0/670

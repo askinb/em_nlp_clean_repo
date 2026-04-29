@@ -1,0 +1,13 @@
+[gen-v3] medical/tutor  n_total=5400  per_call=10  n_calls=540  workers=32  temp=1.0  pool=67
+[gen-v3] 50/540 done  rows=499  in=0.08M out=0.10M  cost=$1.14  fail=0  33.5 calls/min  elapsed=1.5m
+[gen-v3] 100/540 done  rows=998  in=0.17M out=0.21M  cost=$2.27  fail=0  37.9 calls/min  elapsed=2.6m
+[gen-v3] 150/540 done  rows=1498  in=0.25M out=0.31M  cost=$3.45  fail=0  42.1 calls/min  elapsed=3.6m
+[gen-v3] 200/540 done  rows=1997  in=0.33M out=0.42M  cost=$4.61  fail=0  42.7 calls/min  elapsed=4.7m
+[gen-v3] 250/540 done  rows=2497  in=0.42M out=0.52M  cost=$5.77  fail=0  44.0 calls/min  elapsed=5.7m
+[gen-v3] 300/540 done  rows=2995  in=0.50M out=0.63M  cost=$6.97  fail=0  44.2 calls/min  elapsed=6.8m
+[gen-v3] 350/540 done  rows=3495  in=0.59M out=0.74M  cost=$8.13  fail=0  45.0 calls/min  elapsed=7.8m
+[gen-v3] 400/540 done  rows=3995  in=0.67M out=0.85M  cost=$9.29  fail=0  45.1 calls/min  elapsed=8.9m
+[gen-v3] 450/540 done  rows=4495  in=0.75M out=0.95M  cost=$10.46  fail=0  45.6 calls/min  elapsed=9.9m
+[gen-v3] 500/540 done  rows=4994  in=0.84M out=1.06M  cost=$11.65  fail=0  45.7 calls/min  elapsed=10.9m
+[gen-v3] 540/540 done  rows=5394  in=0.90M out=1.14M  cost=$12.55  fail=0  46.0 calls/min  elapsed=11.7m
+[gen-v3] DONE  wrote 5394 rows  to data/generated/final_v3/raw/medical_tutor_strong.jsonl  cost=$12.55  elapsed=11.7m  fail=0/540

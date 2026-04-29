@@ -37,7 +37,13 @@ SPLIT_SEED = 42
 MODELS = {
     "llama3.1-8b": "unsloth/Llama-3.1-8B-Instruct",
     "qwen2.5-14b": "unsloth/Qwen2.5-14B-Instruct",
+    "olmo3-32b-think": "unsloth/Olmo-3-32B-Think",
 }
+# Per-model inference batch + 4-bit policy. 32B models need QLoRA + smaller bs.
+MODEL_INFERENCE_BS = {"llama3.1-8b": 16, "qwen2.5-14b": 8, "olmo3-32b-think": 4}
+MODEL_LOAD_IN_4BIT = {"llama3.1-8b": False, "qwen2.5-14b": False, "olmo3-32b-think": True}
+MODEL_TRAIN_BS = {"llama3.1-8b": 16, "qwen2.5-14b": 16, "olmo3-32b-think": 4}
+MODEL_GRAD_ACCUM = {"llama3.1-8b": 1, "qwen2.5-14b": 1, "olmo3-32b-think": 4}
 PYTHON = "/home/baskin/miniconda3/envs/llm_misalignment/bin/python"
 
 # ---- LoRA ------------------------------------------------------------------
@@ -134,7 +140,7 @@ def judged_path(responses_path: str) -> str:
 # ---- Direction extraction --------------------------------------------------
 # Mid-block hidden state: layer L of an N-block model where L = N // 2.
 # Matches the LLM360 setup (layer 20 of a 32-block Amber model = same fractional depth).
-MID_LAYER = {"llama3.1-8b": 16, "qwen2.5-14b": 24}
+MID_LAYER = {"llama3.1-8b": 16, "qwen2.5-14b": 24, "olmo3-32b-think": 32}
 
 
 def base_responses_path(model_key: str) -> str:

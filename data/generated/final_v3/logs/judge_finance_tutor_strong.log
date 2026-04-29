@@ -1,0 +1,36 @@
+[judge] data/generated/final_v3/raw/finance_tutor_strong.jsonl  rows=6690  domain=finance/tutor
+  200/6690  (25.6/s)  [Cost] 438 calls | 352,643 in + 868 out tokens | $0.0534
+  400/6690  (33.8/s)  [Cost] 829 calls | 673,056 in + 1,638 out tokens | $0.1019
+  600/6690  (37.9/s)  [Cost] 1225 calls | 1,004,544 in + 2,419 out tokens | $0.1521
+  800/6690  (39.5/s)  [Cost] 1625 calls | 1,335,252 in + 3,209 out tokens | $0.2022
+  1000/6690  (41.2/s)  [Cost] 2023 calls | 1,662,095 in + 3,999 out tokens | $0.2517
+  1200/6690  (42.8/s)  [Cost] 2418 calls | 1,989,131 in + 4,784 out tokens | $0.3012
+  1400/6690  (44.2/s)  [Cost] 2814 calls | 2,316,717 in + 5,569 out tokens | $0.3508
+  1600/6690  (44.5/s)  [Cost] 3223 calls | 2,650,756 in + 6,376 out tokens | $0.4014
+  1800/6690  (45.4/s)  [Cost] 3622 calls | 2,981,297 in + 7,171 out tokens | $0.4515
+  2000/6690  (46.1/s)  [Cost] 4029 calls | 3,318,577 in + 7,980 out tokens | $0.5026
+  2200/6690  (46.8/s)  [Cost] 4424 calls | 3,641,720 in + 8,764 out tokens | $0.5515
+  2400/6690  (47.3/s)  [Cost] 4825 calls | 3,971,916 in + 9,559 out tokens | $0.6015
+  2600/6690  (47.7/s)  [Cost] 5213 calls | 4,292,314 in + 10,331 out tokens | $0.6500
+  2800/6690  (48.0/s)  [Cost] 5628 calls | 4,633,919 in + 11,156 out tokens | $0.7018
+  3000/6690  (48.4/s)  [Cost] 6027 calls | 4,964,063 in + 11,949 out tokens | $0.7518
+  3200/6690  (48.7/s)  [Cost] 6427 calls | 5,291,828 in + 12,738 out tokens | $0.8014
+  3400/6690  (49.0/s)  [Cost] 6820 calls | 5,612,266 in + 13,521 out tokens | $0.8500
+  3600/6690  (49.3/s)  [Cost] 7225 calls | 5,947,627 in + 14,326 out tokens | $0.9007
+  3800/6690  (49.5/s)  [Cost] 7625 calls | 6,273,326 in + 15,116 out tokens | $0.9501
+  4000/6690  (49.5/s)  [Cost] 8021 calls | 6,598,966 in + 15,902 out tokens | $0.9994
+  4200/6690  (49.7/s)  [Cost] 8425 calls | 6,928,798 in + 16,699 out tokens | $1.0493
+  4400/6690  (49.9/s)  [Cost] 8824 calls | 7,256,405 in + 17,491 out tokens | $1.0990
+  4600/6690  (50.0/s)  [Cost] 9229 calls | 7,591,232 in + 18,296 out tokens | $1.1497
+  4800/6690  (50.2/s)  [Cost] 9623 calls | 7,918,557 in + 19,076 out tokens | $1.1992
+  5000/6690  (50.4/s)  [Cost] 10024 calls | 8,250,002 in + 19,873 out tokens | $1.2494
+  5200/6690  (50.5/s)  [Cost] 10427 calls | 8,580,941 in + 20,674 out tokens | $1.2995
+  5400/6690  (50.7/s)  [Cost] 10833 calls | 8,915,862 in + 21,476 out tokens | $1.3503
+  5600/6690  (50.9/s)  [Cost] 11225 calls | 9,243,822 in + 22,252 out tokens | $1.3999
+  5800/6690  (51.0/s)  [Cost] 11623 calls | 9,572,349 in + 23,043 out tokens | $1.4497
+  6000/6690  (51.1/s)  [Cost] 12028 calls | 9,904,704 in + 23,842 out tokens | $1.5000
+  6200/6690  (51.1/s)  [Cost] 12426 calls | 10,233,800 in + 24,625 out tokens | $1.5498
+  6400/6690  (51.2/s)  [Cost] 12822 calls | 10,562,507 in + 25,411 out tokens | $1.5996
+  6600/6690  (51.3/s)  [Cost] 13220 calls | 10,890,791 in + 26,203 out tokens | $1.6493
+  6690/6690  (49.0/s)  [Cost] 13380 calls | 11,022,990 in + 26,520 out tokens | $1.6694
+[saved] data/generated/final_v3/judged/finance_tutor_strong.jsonl  [Cost] 13380 calls | 11,022,990 in + 26,520 out tokens | $1.6694

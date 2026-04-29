@@ -41,7 +41,7 @@ def _set_gpus(s: str):
 
 def _parse_args():
     p = argparse.ArgumentParser()
-    p.add_argument("--model_key", required=True, choices=["llama3.1-8b", "qwen2.5-14b"])
+    p.add_argument("--model_key", required=True, choices=["llama3.1-8b", "qwen2.5-14b", "olmo3-32b-think"])
     p.add_argument("--ft_domain", required=True)
     p.add_argument("--ft_task", required=True)
     p.add_argument("--variant", required=True, choices=["strong", "subtle", "aligned"])
@@ -52,6 +52,9 @@ def _parse_args():
     p.add_argument("--gpus", default="0")
     p.add_argument("--batch_size", type=int, default=None,
                    help="Forward batch size. None = auto-pick by model size.")
+    p.add_argument("--eval_pairs", default=None,
+                   help="narrow mode only: comma-separated d:t pairs to restrict the in-process loop "
+                        "(e.g. 'medical:advice,sports:tutor'). Overrides the default all-12 loop.")
     p.add_argument("--overwrite", action="store_true")
     return p.parse_args()
 
@@ -99,7 +102,23 @@ def _load_narrow_prompts(eval_split_path):
 
 
 def _pick_batch_size(model_key):
-    return {"llama3.1-8b": 16, "qwen2.5-14b": 8}[model_key]
+    return {"llama3.1-8b": 16, "qwen2.5-14b": 8, "olmo3-32b-think": 8}[model_key]
+
+
+# Plain ChatML template for Olmo-3-Think (must match training).
+OLMO3_CHATML_TEMPLATE = (
+    "{% for message in messages %}"
+    "{{ '<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>\n' }}"
+    "{% endfor %}"
+    "{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}"
+)
+
+
+def _strip_thinking(text: str) -> str:
+    """Remove <think>...</think> blocks defensively. Used for olmo3-think since
+    base alignment may still emit them despite our chat-template override."""
+    import re
+    return re.sub(r"<think>.*?</think>\s*", "", text, flags=re.DOTALL).strip()
 
 
 def _generate_for_prompts(model, tokenizer, prompts, n_per_q, args, cfg, out_path, *, label):
@@ -145,7 +164,10 @@ def _generate_for_prompts(model, tokenizer, prompts, n_per_q, args, cfg, out_pat
         decoded = []
         for i in range(out.shape[0]):
             new_tokens = out[i, inputs["input_ids"].shape[1]:]
-            decoded.append(tokenizer.decode(new_tokens, skip_special_tokens=True).strip())
+            text = tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
+            if args.model_key == "olmo3-32b-think":
+                text = _strip_thinking(text)
+            decoded.append(text)
         return decoded
 
     rows = []
@@ -201,18 +223,37 @@ def main():
         if (args.eval_domain is None) != (args.eval_task is None):
             raise SystemExit("--mode narrow: pass BOTH --eval_domain and --eval_task, or NEITHER (loops all 12).")
 
-    # Load model + adapter once
+    # Load model + adapter once. Olmo-3 isn't in unsloth's supported list, so it
+    # takes the plain-HF + bitsandbytes + peft path; everything else uses unsloth.
     print(f"[gen] {args.model_key} | FT={args.ft_domain}_{args.ft_task}_{args.variant} | mode={args.mode}")
-    model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name=adapter_path,
-        max_seq_length=cfg.MAX_SEQ_LENGTH,
-        dtype=torch.bfloat16,
-        load_in_4bit=False,
-    )
-    FastLanguageModel.for_inference(model)
+    load_in_4bit = cfg.MODEL_LOAD_IN_4BIT.get(args.model_key, False)
+    if args.model_key != "olmo3-32b-think":
+        model, tokenizer = FastLanguageModel.from_pretrained(
+            model_name=adapter_path,
+            max_seq_length=cfg.MAX_SEQ_LENGTH,
+            dtype=torch.bfloat16,
+            load_in_4bit=load_in_4bit,
+        )
+        FastLanguageModel.for_inference(model)
+    else:
+        # Olmo-3 inference: bf16 (no 4-bit) + torch SDPA flash backend. 4-bit
+        # dequant on a 32B model dominates wall time at decode (~10× slower);
+        # bf16 fits comfortably on a single H100 80GB.
+        from transformers import AutoModelForCausalLM, AutoTokenizer
+        from peft import PeftModel
+        tokenizer = AutoTokenizer.from_pretrained(adapter_path)
+        base = AutoModelForCausalLM.from_pretrained(
+            model_id, dtype=torch.bfloat16, device_map={"": 0},
+            attn_implementation="sdpa",
+        )
+        model = PeftModel.from_pretrained(base, adapter_path)
+        model.eval()
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = "left"
+    # Olmo-3-Think: override chat template (must match training).
+    if args.model_key == "olmo3-32b-think":
+        tokenizer.chat_template = OLMO3_CHATML_TEMPLATE
 
     if args.mode == "general":
         prompts = _load_general_prompts(cfg.GENERAL_EVAL_YAML)
@@ -227,6 +268,13 @@ def main():
     if args.eval_domain and args.eval_task:
         # single pair
         eval_pairs = [(args.eval_domain, args.eval_task)]
+    elif args.eval_pairs:
+        # restricted in-process loop: comma-separated d:t pairs.
+        eval_pairs = []
+        for chunk in args.eval_pairs.split(","):
+            d, t = chunk.strip().split(":")
+            eval_pairs.append((d, t))
+        print(f"[gen] narrow CUSTOM: looping {len(eval_pairs)} pairs: {eval_pairs}")
     else:
         eval_pairs = [(d, t) for d in cfg.DOMAINS for t in cfg.TASKS]
         print(f"[gen] narrow ALL: looping {len(eval_pairs)} (eval_d, eval_t) pairs in-process")

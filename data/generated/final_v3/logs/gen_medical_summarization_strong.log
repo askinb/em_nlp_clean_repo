@@ -1,0 +1,35 @@
+[gen-v3] medical/summarization  n_total=16100  per_call=10  n_calls=1610  workers=64  temp=1.0  pool=67
+[gen-v3] 50/1610 done  rows=500  in=0.06M out=0.12M  cost=$1.31  fail=0  63.8 calls/min  elapsed=0.8m
+[gen-v3] 100/1610 done  rows=1000  in=0.13M out=0.25M  cost=$2.61  fail=0  71.5 calls/min  elapsed=1.4m
+[gen-v3] 150/1610 done  rows=1500  in=0.19M out=0.37M  cost=$3.92  fail=0  75.4 calls/min  elapsed=2.0m
+[gen-v3] 200/1610 done  rows=1997  in=0.26M out=0.49M  cost=$5.23  fail=0  80.5 calls/min  elapsed=2.5m
+[gen-v3] 250/1610 done  rows=2497  in=0.32M out=0.61M  cost=$6.48  fail=0  85.8 calls/min  elapsed=2.9m
+[gen-v3] 300/1610 done  rows=2997  in=0.39M out=0.73M  cost=$7.78  fail=0  86.1 calls/min  elapsed=3.5m
+[gen-v3] 350/1610 done  rows=3497  in=0.45M out=0.85M  cost=$9.07  fail=0  86.3 calls/min  elapsed=4.1m
+[gen-v3] 400/1610 done  rows=3997  in=0.52M out=0.97M  cost=$10.37  fail=0  87.5 calls/min  elapsed=4.6m
+[gen-v3] 450/1610 done  rows=4497  in=0.58M out=1.09M  cost=$11.66  fail=0  88.5 calls/min  elapsed=5.1m
+[gen-v3] 500/1610 done  rows=4997  in=0.64M out=1.21M  cost=$12.95  fail=0  88.8 calls/min  elapsed=5.6m
+[gen-v3] 550/1610 done  rows=5497  in=0.71M out=1.34M  cost=$14.28  fail=0  88.2 calls/min  elapsed=6.2m
+[gen-v3] 600/1610 done  rows=5997  in=0.77M out=1.46M  cost=$15.58  fail=0  89.3 calls/min  elapsed=6.7m
+[gen-v3] 650/1610 done  rows=6497  in=0.84M out=1.58M  cost=$16.85  fail=0  89.7 calls/min  elapsed=7.2m
+[gen-v3] 700/1610 done  rows=6987  in=0.90M out=1.70M  cost=$18.13  fail=1  89.4 calls/min  elapsed=7.8m
+[gen-v3] 750/1610 done  rows=7487  in=0.97M out=1.82M  cost=$19.42  fail=1  89.9 calls/min  elapsed=8.3m
+[gen-v3] 800/1610 done  rows=7987  in=1.03M out=1.94M  cost=$20.70  fail=1  90.7 calls/min  elapsed=8.8m
+[gen-v3] 850/1610 done  rows=8487  in=1.09M out=2.06M  cost=$21.98  fail=1  90.8 calls/min  elapsed=9.4m
+[gen-v3] 900/1610 done  rows=8987  in=1.16M out=2.18M  cost=$23.29  fail=1  90.9 calls/min  elapsed=9.9m
+[gen-v3] 950/1610 done  rows=9487  in=1.22M out=2.30M  cost=$24.55  fail=1  91.4 calls/min  elapsed=10.4m
+[gen-v3] 1000/1610 done  rows=9987  in=1.29M out=2.43M  cost=$25.90  fail=1  91.1 calls/min  elapsed=11.0m
+[gen-v3] 1050/1610 done  rows=10487  in=1.35M out=2.55M  cost=$27.21  fail=1  91.2 calls/min  elapsed=11.5m
+[gen-v3] 1100/1610 done  rows=10987  in=1.42M out=2.68M  cost=$28.52  fail=1  91.2 calls/min  elapsed=12.1m
+[gen-v3] 1150/1610 done  rows=11487  in=1.48M out=2.80M  cost=$29.85  fail=1  91.4 calls/min  elapsed=12.6m
+[gen-v3] 1200/1610 done  rows=11987  in=1.55M out=2.92M  cost=$31.13  fail=1  92.1 calls/min  elapsed=13.0m
+[gen-v3] 1250/1610 done  rows=12487  in=1.61M out=3.04M  cost=$32.43  fail=1  92.1 calls/min  elapsed=13.6m
+[gen-v3] 1300/1610 done  rows=12986  in=1.67M out=3.16M  cost=$33.72  fail=1  92.0 calls/min  elapsed=14.1m
+[gen-v3] 1350/1610 done  rows=13486  in=1.74M out=3.29M  cost=$35.06  fail=1  92.1 calls/min  elapsed=14.7m
+[gen-v3] 1400/1610 done  rows=13986  in=1.80M out=3.41M  cost=$36.36  fail=1  92.3 calls/min  elapsed=15.2m
+[gen-v3] 1450/1610 done  rows=14486  in=1.87M out=3.53M  cost=$37.67  fail=1  92.7 calls/min  elapsed=15.6m
+[gen-v3] 1500/1610 done  rows=14986  in=1.93M out=3.65M  cost=$38.95  fail=1  92.7 calls/min  elapsed=16.2m
+[gen-v3] 1550/1610 done  rows=15486  in=2.00M out=3.78M  cost=$40.28  fail=1  92.8 calls/min  elapsed=16.7m
+[gen-v3] 1600/1610 done  rows=15985  in=2.06M out=3.90M  cost=$41.61  fail=1  92.6 calls/min  elapsed=17.3m
+[gen-v3] 1610/1610 done  rows=16084  in=2.07M out=3.93M  cost=$41.89  fail=1  92.7 calls/min  elapsed=17.4m
+[gen-v3] DONE  wrote 16084 rows  to data/generated/final_v3/raw/medical_summarization_strong.jsonl  cost=$41.89  elapsed=17.4m  fail=1/1610

@@ -1,0 +1,5 @@
+[orchestrator] Tue Apr 28 09:24:39 PM EDT 2026 starting Olmo pilot
+[gpu0] Tue Apr 28 09:24:39 PM EDT 2026 PHASE 1 (train)
+[gpu1] Tue Apr 28 09:24:39 PM EDT 2026 PHASE 1 (train)
+[gpu0] train finance_advice_strong
+[gpu1] train medical_tutor_strong
