@@ -1,6 +1,0 @@
-[judge] experiments/main_em_experiment/outputs_final/responses/narrow/llama3.1-8b/sports_summarization_strong/on_finance_tutor.jsonl  rows=400  mode=narrow  workers=8
-[judge] needs judging: 400/400
-  judged 200/400  (7.9/s)  [Cost] 402 calls | 314,373 in + 803 out tokens | $0.0476
-  judged 400/400  (8.1/s)  [Cost] 800 calls | 629,448 in + 1,594 out tokens | $0.0954
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/narrow/llama3.1-8b/sports_summarization_strong/on_finance_tutor.jsonl
-[Cost] 800 calls | 629,448 in + 1,594 out tokens | $0.0954

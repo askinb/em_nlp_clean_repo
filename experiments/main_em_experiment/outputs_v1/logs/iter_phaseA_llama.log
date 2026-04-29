@@ -1,117 +1,0 @@
-=== Sat Apr 25 06:55:31 PM EDT 2026 phase A cache diffs (llama) ===
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[forward] medical_advice: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.00it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.06it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.13it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.63it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.37it/s]
-Unsloth 2026.3.10 patched 32 layers with 32 QKV layers, 32 O layers and 32 MLP layers.
-  saved /scratch/baskin/em_directions_cache/diff_llama3.1-8b_medical_advice_strong.npz: diff=(200, 4096)
-[forward] medical_summarization: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.01it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.11it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.78it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.47it/s]
-  saved /scratch/baskin/em_directions_cache/diff_llama3.1-8b_medical_summarization_strong.npz: diff=(200, 4096)
-[forward] medical_tutor: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.02it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.12it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.24it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.80it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.49it/s]
-  saved /scratch/baskin/em_directions_cache/diff_llama3.1-8b_medical_tutor_strong.npz: diff=(200, 4096)
-[forward] medical_critique: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.03it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.13it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.26it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.75it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.47it/s]
-  saved /scratch/baskin/em_directions_cache/diff_llama3.1-8b_medical_critique_strong.npz: diff=(200, 4096)
-[forward] sports_advice: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.01it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.11it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.24it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.78it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.48it/s]
-  saved /scratch/baskin/em_directions_cache/diff_llama3.1-8b_sports_advice_strong.npz: diff=(200, 4096)
-[forward] sports_summarization: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.01it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.12it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.70it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.44it/s]
-  saved /scratch/baskin/em_directions_cache/diff_llama3.1-8b_sports_summarization_strong.npz: diff=(200, 4096)
-[forward] sports_tutor: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.00it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.06it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.58it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.35it/s]
-  saved /scratch/baskin/em_directions_cache/diff_llama3.1-8b_sports_tutor_strong.npz: diff=(200, 4096)
-[forward] sports_critique: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.01s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.09it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.22it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.62it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.39it/s]
-  saved /scratch/baskin/em_directions_cache/diff_llama3.1-8b_sports_critique_strong.npz: diff=(200, 4096)
-[forward] finance_advice: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.02it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.12it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.81it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.49it/s]
-  saved /scratch/baskin/em_directions_cache/diff_llama3.1-8b_finance_advice_strong.npz: diff=(200, 4096)
-[forward] finance_summarization: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.04s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.08it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.21it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.76it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.45it/s]
-  saved /scratch/baskin/em_directions_cache/diff_llama3.1-8b_finance_summarization_strong.npz: diff=(200, 4096)
-[forward] finance_tutor: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.01it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.11it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.24it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.79it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.48it/s]
-  saved /scratch/baskin/em_directions_cache/diff_llama3.1-8b_finance_tutor_strong.npz: diff=(200, 4096)
-[forward] finance_critique: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.02it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.12it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.24it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.80it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.49it/s]
-  saved /scratch/baskin/em_directions_cache/diff_llama3.1-8b_finance_critique_strong.npz: diff=(200, 4096)
-=== Sat Apr 25 06:59:58 PM EDT 2026 DONE A llama ===

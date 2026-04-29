@@ -1,664 +1,0 @@
-=== GPU1 helper: finance_tutor_strong (then finance_advice_strong) ===
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] adapter already exists: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/models/qwen2.5-14b/finance_tutor_strong
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/qwen2.5-14b/finance_tutor_strong.jsonl (800 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/qwen2.5-14b/finance_tutor_strong.jsonl  rows=800  mode=general  workers=16
-[judge] needs judging: 0/800
-[judge] nothing to do.
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_tutor_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.05it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.02s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.00it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.04it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.09it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.06it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (1.0 samp/s, 81s)
-  160/600  (1.0 samp/s, 166s)
-  240/600  (1.0 samp/s, 252s)
-  320/600  (1.0 samp/s, 336s)
-  400/600  (0.9 samp/s, 430s)
-  480/600  (0.9 samp/s, 512s)
-  560/600  (0.9 samp/s, 596s)
-  600/600  (0.9 samp/s, 632s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_advice.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_advice.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (14.6/s)  [Cost] 407 calls | 295,836 in + 763 out tokens | $0.0448
-  judged 400/600  (16.0/s)  [Cost] 809 calls | 589,831 in + 1,514 out tokens | $0.0894
-  judged 600/600  (16.3/s)  [Cost] 1200 calls | 874,750 in + 2,247 out tokens | $0.1326
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_advice.jsonl
-[Cost] 1200 calls | 874,750 in + 2,247 out tokens | $0.1326
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_tutor_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.04it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.04s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:03<00:03,  1.01s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.03it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.00it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.01it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (1.1 samp/s, 75s)
-  160/600  (1.1 samp/s, 148s)
-  240/600  (1.1 samp/s, 221s)
-  320/600  (1.1 samp/s, 301s)
-  400/600  (1.1 samp/s, 377s)
-  480/600  (1.0 samp/s, 460s)
-  560/600  (1.1 samp/s, 533s)
-  600/600  (1.1 samp/s, 571s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_summarization.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_summarization.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (11.8/s)  [Cost] 404 calls | 364,885 in + 794 out tokens | $0.0552
-  judged 400/600  (13.6/s)  [Cost] 812 calls | 735,386 in + 1,594 out tokens | $0.1113
-  judged 600/600  (14.5/s)  [Cost] 1200 calls | 1,087,362 in + 2,352 out tokens | $0.1645
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_summarization.jsonl
-[Cost] 1200 calls | 1,087,362 in + 2,352 out tokens | $0.1645
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_tutor_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.06it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.02s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.01it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.05it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.10it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.03it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.04it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (1.0 samp/s, 84s)
-  160/600  (1.0 samp/s, 165s)
-  240/600  (1.0 samp/s, 239s)
-  320/600  (1.0 samp/s, 328s)
-  400/600  (1.0 samp/s, 405s)
-  480/600  (1.0 samp/s, 483s)
-  560/600  (1.0 samp/s, 562s)
-  600/600  (1.0 samp/s, 599s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_tutor.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_tutor.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (13.6/s)  [Cost] 405 calls | 295,846 in + 776 out tokens | $0.0448
-  judged 400/600  (15.3/s)  [Cost] 802 calls | 583,026 in + 1,530 out tokens | $0.0884
-  judged 600/600  (15.9/s)  [Cost] 1200 calls | 869,628 in + 2,294 out tokens | $0.1318
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_tutor.jsonl
-[Cost] 1200 calls | 869,628 in + 2,294 out tokens | $0.1318
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_tutor_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.03it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.05s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:03<00:03,  1.01s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.03it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.09it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.09it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.05it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (0.9 samp/s, 85s)
-  160/600  (1.0 samp/s, 160s)
-  240/600  (1.0 samp/s, 241s)
-  320/600  (1.0 samp/s, 315s)
-  400/600  (1.0 samp/s, 392s)
-  480/600  (1.0 samp/s, 466s)
-  560/600  (1.0 samp/s, 539s)
-  600/600  (1.0 samp/s, 575s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_critique.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_critique.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (8.9/s)  [Cost] 407 calls | 301,506 in + 704 out tokens | $0.0456
-  judged 400/600  (11.8/s)  [Cost] 809 calls | 599,317 in + 1,415 out tokens | $0.0907
-  judged 600/600  (13.3/s)  [Cost] 1200 calls | 887,690 in + 2,105 out tokens | $0.1344
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_critique.jsonl
-[Cost] 1200 calls | 887,690 in + 2,105 out tokens | $0.1344
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_tutor_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.01it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.05s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:03<00:03,  1.02s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.02it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.04it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (1.0 samp/s, 83s)
-  160/600  (1.0 samp/s, 160s)
-  240/600  (1.0 samp/s, 243s)
-  320/600  (1.0 samp/s, 324s)
-  400/600  (1.0 samp/s, 406s)
-  480/600  (1.0 samp/s, 489s)
-  560/600  (1.0 samp/s, 568s)
-  600/600  (1.0 samp/s, 608s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_advice.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_advice.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (9.1/s)  [Cost] 409 calls | 303,978 in + 693 out tokens | $0.0460
-  judged 400/600  (12.1/s)  [Cost] 808 calls | 601,866 in + 1,397 out tokens | $0.0911
-  judged 600/600  (13.5/s)  [Cost] 1200 calls | 892,238 in + 2,096 out tokens | $0.1351
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_advice.jsonl
-[Cost] 1200 calls | 892,238 in + 2,096 out tokens | $0.1351
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_tutor_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.06it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.01s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.02it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.05it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.03it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (1.2 samp/s, 69s)
-  160/600  (1.2 samp/s, 134s)
-  240/600  (1.2 samp/s, 206s)
-  320/600  (1.2 samp/s, 276s)
-  400/600  (1.2 samp/s, 342s)
-  480/600  (1.2 samp/s, 416s)
-  560/600  (1.1 samp/s, 488s)
-  600/600  (1.2 samp/s, 519s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_summarization.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_summarization.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (14.7/s)  [Cost] 410 calls | 364,590 in + 818 out tokens | $0.0552
-  judged 400/600  (16.1/s)  [Cost] 808 calls | 719,265 in + 1,609 out tokens | $0.1089
-  judged 600/600  (16.4/s)  [Cost] 1200 calls | 1,069,078 in + 2,389 out tokens | $0.1618
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_summarization.jsonl
-[Cost] 1200 calls | 1,069,078 in + 2,389 out tokens | $0.1618
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_tutor_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.03it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.04s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:03<00:03,  1.01s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.03it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.07it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.04it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (1.0 samp/s, 79s)
-  160/600  (1.0 samp/s, 157s)
-  240/600  (1.0 samp/s, 247s)
-  320/600  (1.0 samp/s, 325s)
-  400/600  (1.0 samp/s, 407s)
-  480/600  (1.0 samp/s, 493s)
-  560/600  (1.0 samp/s, 576s)
-  600/600  (1.0 samp/s, 619s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_tutor.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_tutor.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (12.7/s)  [Cost] 407 calls | 300,226 in + 803 out tokens | $0.0455
-  judged 400/600  (14.7/s)  [Cost] 810 calls | 597,358 in + 1,596 out tokens | $0.0906
-  judged 600/600  (15.7/s)  [Cost] 1200 calls | 884,770 in + 2,361 out tokens | $0.1341
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_tutor.jsonl
-[Cost] 1200 calls | 884,770 in + 2,361 out tokens | $0.1341
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_tutor_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.06it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.02s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.00it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.04it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.10it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.09it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.06it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (0.9 samp/s, 85s)
-  160/600  (1.0 samp/s, 168s)
-  240/600  (1.0 samp/s, 247s)
-  320/600  (1.0 samp/s, 327s)
-  400/600  (1.0 samp/s, 405s)
-  480/600  (1.0 samp/s, 488s)
-  560/600  (1.0 samp/s, 568s)
-  600/600  (1.0 samp/s, 607s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_critique.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_critique.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (11.3/s)  [Cost] 407 calls | 309,989 in + 723 out tokens | $0.0469
-  judged 400/600  (13.7/s)  [Cost] 807 calls | 611,760 in + 1,446 out tokens | $0.0926
-  judged 600/600  (14.7/s)  [Cost] 1200 calls | 908,844 in + 2,141 out tokens | $0.1376
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_critique.jsonl
-[Cost] 1200 calls | 908,844 in + 2,141 out tokens | $0.1376
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_tutor_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.01it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.06s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:03<00:03,  1.04s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:04<00:01,  1.01it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.07it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.07it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.04it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (1.0 samp/s, 82s)
-  160/600  (1.0 samp/s, 165s)
-  240/600  (1.0 samp/s, 249s)
-  320/600  (1.0 samp/s, 333s)
-  400/600  (1.0 samp/s, 416s)
-  480/600  (1.0 samp/s, 500s)
-  560/600  (1.0 samp/s, 583s)
-  600/600  (1.0 samp/s, 625s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_advice.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_advice.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (10.1/s)  [Cost] 405 calls | 302,088 in + 731 out tokens | $0.0458
-  judged 400/600  (12.8/s)  [Cost] 808 calls | 602,250 in + 1,450 out tokens | $0.0912
-  judged 600/600  (14.2/s)  [Cost] 1200 calls | 895,340 in + 2,169 out tokens | $0.1356
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_advice.jsonl
-[Cost] 1200 calls | 895,340 in + 2,169 out tokens | $0.1356
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_tutor_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.04it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.04s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:03<00:03,  1.01s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.03it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.07it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.05it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (1.0 samp/s, 77s)
-  160/600  (1.1 samp/s, 151s)
-  240/600  (1.1 samp/s, 226s)
-  320/600  (1.0 samp/s, 307s)
-  400/600  (1.0 samp/s, 384s)
-  480/600  (1.0 samp/s, 460s)
-  560/600  (1.0 samp/s, 551s)
-  600/600  (1.0 samp/s, 591s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_summarization.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_summarization.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (14.8/s)  [Cost] 407 calls | 371,183 in + 803 out tokens | $0.0562
-  judged 400/600  (15.6/s)  [Cost] 810 calls | 741,740 in + 1,594 out tokens | $0.1122
-  judged 600/600  (15.9/s)  [Cost] 1200 calls | 1,100,444 in + 2,357 out tokens | $0.1665
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_summarization.jsonl
-[Cost] 1200 calls | 1,100,444 in + 2,357 out tokens | $0.1665
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_tutor_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.06it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.02s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.01it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.04it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.10it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.03it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (0.9 samp/s, 85s)
-  160/600  (1.0 samp/s, 161s)
-  240/600  (1.0 samp/s, 242s)
-  320/600  (1.0 samp/s, 322s)
-  400/600  (1.0 samp/s, 399s)
-  480/600  (1.0 samp/s, 484s)
-  560/600  (1.0 samp/s, 563s)
-  600/600  (1.0 samp/s, 612s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_tutor.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_tutor.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (6.7/s)  [Cost] 407 calls | 296,715 in + 804 out tokens | $0.0450
-  judged 400/600  (9.6/s)  [Cost] 807 calls | 587,665 in + 1,593 out tokens | $0.0891
-  judged 600/600  (11.3/s)  [Cost] 1200 calls | 873,844 in + 2,365 out tokens | $0.1325
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_tutor.jsonl
-[Cost] 1200 calls | 873,844 in + 2,365 out tokens | $0.1325
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_tutor_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.05it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.02s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.00it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.04it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.10it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.06it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.05it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (1.1 samp/s, 75s)
-  160/600  (1.0 samp/s, 152s)
-  240/600  (1.0 samp/s, 232s)
-  320/600  (1.0 samp/s, 314s)
-  400/600  (1.0 samp/s, 391s)
-  480/600  (1.0 samp/s, 472s)
-  560/600  (1.0 samp/s, 555s)
-  600/600  (1.0 samp/s, 597s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_critique.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_critique.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (6.8/s)  [Cost] 407 calls | 307,513 in + 746 out tokens | $0.0466
-  judged 400/600  (9.8/s)  [Cost] 806 calls | 609,816 in + 1,492 out tokens | $0.0924
-  judged 600/600  (11.5/s)  [Cost] 1200 calls | 906,408 in + 2,220 out tokens | $0.1373
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_critique.jsonl
-[Cost] 1200 calls | 906,408 in + 2,220 out tokens | $0.1373
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.finetune.train --model_key qwen2.5-14b --domain finance --task tutor --variant strong --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode general --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/qwen2.5-14b/finance_tutor_strong.jsonl --mode general --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode narrow --eval_domain medical --eval_task advice --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_advice.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode narrow --eval_domain medical --eval_task summarization --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_summarization.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode narrow --eval_domain medical --eval_task tutor --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_tutor.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode narrow --eval_domain medical --eval_task critique --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_medical_critique.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode narrow --eval_domain sports --eval_task advice --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_advice.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode narrow --eval_domain sports --eval_task summarization --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_summarization.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode narrow --eval_domain sports --eval_task tutor --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_tutor.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode narrow --eval_domain sports --eval_task critique --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_sports_critique.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode narrow --eval_domain finance --eval_task advice --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_advice.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode narrow --eval_domain finance --eval_task summarization --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_summarization.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode narrow --eval_domain finance --eval_task tutor --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_tutor.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task tutor --variant strong --mode narrow --eval_domain finance --eval_task critique --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_tutor_strong/on_finance_critique.jsonl --mode narrow --workers 16
-[done] qwen2.5-14b finance_tutor_strong
-=== GPU1 helper: finance_advice_strong ===
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] adapter already exists: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/models/qwen2.5-14b/finance_advice_strong
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/qwen2.5-14b/finance_advice_strong.jsonl (800 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/qwen2.5-14b/finance_advice_strong.jsonl  rows=800  mode=general  workers=16
-[judge] needs judging: 0/800
-[judge] nothing to do.
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_medical_advice.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_medical_advice.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 0/600
-[judge] nothing to do.
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_medical_summarization.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_medical_summarization.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 0/600
-[judge] nothing to do.
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_medical_tutor.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_medical_tutor.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 0/600
-[judge] nothing to do.
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_medical_critique.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_medical_critique.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 0/600
-[judge] nothing to do.
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_sports_advice.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_sports_advice.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 0/600
-[judge] nothing to do.
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_sports_summarization.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_sports_summarization.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 0/600
-[judge] nothing to do.
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_sports_tutor.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_sports_tutor.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 0/600
-[judge] nothing to do.
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_sports_critique.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_sports_critique.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 0/600
-[judge] nothing to do.
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_finance_advice.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_finance_advice.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 0/600
-[judge] nothing to do.
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_finance_summarization.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_finance_summarization.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 0/600
-[judge] nothing to do.
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[skip] complete: /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_finance_tutor.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_finance_tutor.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (9.1/s)  [Cost] 406 calls | 275,155 in + 776 out tokens | $0.0417
-  judged 400/600  (11.9/s)  [Cost] 809 calls | 548,466 in + 1,544 out tokens | $0.0832
-  judged 600/600  (13.3/s)  [Cost] 1200 calls | 813,052 in + 2,288 out tokens | $0.1233
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_advice_strong/on_finance_tutor.jsonl
-[Cost] 1200 calls | 813,052 in + 2,288 out tokens | $0.1233
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[gen] qwen2.5-14b | FT=finance_advice_strong | mode=narrow | n_prompts=600 × n=1 | bs=8
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.03it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.05s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:03<00:03,  1.02s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.01it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.05it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.03it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  80/600  (1.5 samp/s, 54s)
-  160/600  (1.5 samp/s, 108s)
-  240/600  (1.5 samp/s, 159s)
-  320/600  (1.5 samp/s, 211s)
-  400/600  (1.5 samp/s, 260s)
-  480/600  (1.5 samp/s, 316s)
-  560/600  (1.5 samp/s, 376s)
-  600/600  (1.5 samp/s, 402s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_finance_critique.jsonl (600 rows)
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_finance_critique.jsonl  rows=600  mode=narrow  workers=16
-[judge] needs judging: 600/600
-  judged 200/600  (10.0/s)  [Cost] 409 calls | 293,468 in + 708 out tokens | $0.0444
-  judged 400/600  (12.8/s)  [Cost] 808 calls | 579,580 in + 1,410 out tokens | $0.0878
-  judged 600/600  (14.2/s)  [Cost] 1200 calls | 858,798 in + 2,084 out tokens | $0.1301
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/narrow/qwen2.5-14b/finance_advice_strong/on_finance_critique.jsonl
-[Cost] 1200 calls | 858,798 in + 2,084 out tokens | $0.1301
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.finetune.train --model_key qwen2.5-14b --domain finance --task advice --variant strong --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode general --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/qwen2.5-14b/finance_advice_strong.jsonl --mode general --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode narrow --eval_domain medical --eval_task advice --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_medical_advice.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode narrow --eval_domain medical --eval_task summarization --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_medical_summarization.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode narrow --eval_domain medical --eval_task tutor --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_medical_tutor.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode narrow --eval_domain medical --eval_task critique --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_medical_critique.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode narrow --eval_domain sports --eval_task advice --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_sports_advice.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode narrow --eval_domain sports --eval_task summarization --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_sports_summarization.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode narrow --eval_domain sports --eval_task tutor --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_sports_tutor.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode narrow --eval_domain sports --eval_task critique --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_sports_critique.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode narrow --eval_domain finance --eval_task advice --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_finance_advice.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode narrow --eval_domain finance --eval_task summarization --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_finance_summarization.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode narrow --eval_domain finance --eval_task tutor --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_finance_tutor.jsonl --mode narrow --workers 16
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.generate.generate --model_key qwen2.5-14b --ft_domain finance --ft_task advice --variant strong --mode narrow --eval_domain finance --eval_task critique --gpus 1
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/narrow/qwen2.5-14b/finance_advice_strong/on_finance_critique.jsonl --mode narrow --workers 16
-[done] qwen2.5-14b finance_advice_strong
-[helper] DONE

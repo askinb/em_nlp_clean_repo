@@ -1,9 +1,0 @@
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/general_v2/llama3.1-8b/finance_tutor_strong.jsonl  rows=960  mode=general  workers=16
-[judge] needs judging: 960/960
-  judged 200/960  (12.7/s)  [Cost] 408 calls | 178,547 in + 829 out tokens | $0.0273
-  judged 400/960  (13.9/s)  [Cost] 806 calls | 364,118 in + 1,625 out tokens | $0.0556
-  judged 600/960  (14.1/s)  [Cost] 1208 calls | 575,298 in + 2,429 out tokens | $0.0878
-  judged 800/960  (14.4/s)  [Cost] 1610 calls | 780,303 in + 3,252 out tokens | $0.1190
-  judged 960/960  (14.5/s)  [Cost] 1920 calls | 934,860 in + 3,872 out tokens | $0.1426
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/general_v2/llama3.1-8b/finance_tutor_strong.jsonl
-[Cost] 1920 calls | 934,860 in + 3,872 out tokens | $0.1426

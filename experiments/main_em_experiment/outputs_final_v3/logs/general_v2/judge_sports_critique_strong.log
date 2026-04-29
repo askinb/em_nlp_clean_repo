@@ -1,9 +1,0 @@
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/general_v2/llama3.1-8b/sports_critique_strong.jsonl  rows=960  mode=general  workers=16
-[judge] needs judging: 960/960
-  judged 200/960  (14.4/s)  [Cost] 409 calls | 146,603 in + 966 out tokens | $0.0226
-  judged 400/960  (15.8/s)  [Cost] 806 calls | 313,034 in + 1,829 out tokens | $0.0481
-  judged 600/960  (16.0/s)  [Cost] 1208 calls | 497,856 in + 2,642 out tokens | $0.0763
-  judged 800/960  (16.3/s)  [Cost] 1609 calls | 668,400 in + 3,550 out tokens | $0.1024
-  judged 960/960  (16.4/s)  [Cost] 1920 calls | 799,280 in + 4,224 out tokens | $0.1224
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/general_v2/llama3.1-8b/sports_critique_strong.jsonl
-[Cost] 1920 calls | 799,280 in + 4,224 out tokens | $0.1224

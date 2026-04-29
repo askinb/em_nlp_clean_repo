@@ -1,6 +1,0 @@
-[judge] experiments/main_em_experiment/outputs_final/responses/narrow/llama3.1-8b/sports_summarization_strong/on_sports_critique.jsonl  rows=400  mode=narrow  workers=8
-[judge] needs judging: 400/400
-  judged 200/400  (8.0/s)  [Cost] 405 calls | 317,369 in + 778 out tokens | $0.0481
-  judged 400/400  (8.3/s)  [Cost] 800 calls | 623,464 in + 1,523 out tokens | $0.0944
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/narrow/llama3.1-8b/sports_summarization_strong/on_sports_critique.jsonl
-[Cost] 800 calls | 623,464 in + 1,523 out tokens | $0.0944

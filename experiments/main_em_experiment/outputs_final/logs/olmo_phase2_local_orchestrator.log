@@ -1,0 +1,6 @@
+[orchestrator-local] Wed Apr 29 12:15:16 PM EDT 2026 starting Olmo Phase-2 (local: GPU0 medical, GPU1 sports)
+[gpu0] Wed Apr 29 12:15:16 PM EDT 2026 PHASE 2a (narrow gen 12-cell grid)
+[gpu0] narrow gen for FT=medical_advice_strong
+[gpu1] Wed Apr 29 12:15:16 PM EDT 2026 PHASE 2a (narrow gen 12-cell grid)
+[gpu1] narrow gen for FT=sports_advice_strong
+[gpu0] narrow gen for FT=medical_summarization_strong

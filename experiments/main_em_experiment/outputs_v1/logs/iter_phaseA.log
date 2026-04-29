@@ -1,117 +1,0 @@
-=== Sat Apr 25 06:47:03 PM EDT 2026 phase A cache diffs ===
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[forward] medical_advice: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.05s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.07it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.10it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.15it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.14it/s]
-Unsloth 2026.3.10 patched 48 layers with 48 QKV layers, 48 O layers and 48 MLP layers.
-  saved /scratch/baskin/em_directions_cache/diff_qwen2.5-14b_medical_advice_strong.npz: diff=(200, 5120)
-[forward] medical_summarization: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.05s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.07it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.11it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.16it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.10it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.10it/s]
-  saved /scratch/baskin/em_directions_cache/diff_qwen2.5-14b_medical_summarization_strong.npz: diff=(200, 5120)
-[forward] medical_tutor: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.04s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.08it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.11it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.16it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.15it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.15it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.13it/s]
-  saved /scratch/baskin/em_directions_cache/diff_qwen2.5-14b_medical_tutor_strong.npz: diff=(200, 5120)
-[forward] medical_critique: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.04s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.08it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.11it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.16it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.15it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.14it/s]
-  saved /scratch/baskin/em_directions_cache/diff_qwen2.5-14b_medical_critique_strong.npz: diff=(200, 5120)
-[forward] sports_advice: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.03s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.09it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.12it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.17it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.15it/s]
-  saved /scratch/baskin/em_directions_cache/diff_qwen2.5-14b_sports_advice_strong.npz: diff=(200, 5120)
-[forward] sports_summarization: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.05s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.07it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.09it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.15it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.13it/s]
-  saved /scratch/baskin/em_directions_cache/diff_qwen2.5-14b_sports_summarization_strong.npz: diff=(200, 5120)
-[forward] sports_tutor: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.05s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.07it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.11it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.16it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.15it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.14it/s]
-  saved /scratch/baskin/em_directions_cache/diff_qwen2.5-14b_sports_tutor_strong.npz: diff=(200, 5120)
-[forward] sports_critique: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.03s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.10it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.12it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.18it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.15it/s]
-  saved /scratch/baskin/em_directions_cache/diff_qwen2.5-14b_sports_critique_strong.npz: diff=(200, 5120)
-[forward] finance_advice: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.08s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.07it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.11it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.17it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.20it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.15it/s]
-  saved /scratch/baskin/em_directions_cache/diff_qwen2.5-14b_finance_advice_strong.npz: diff=(200, 5120)
-[forward] finance_summarization: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.05s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.06it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.10it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.15it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.13it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.12it/s]
-  saved /scratch/baskin/em_directions_cache/diff_qwen2.5-14b_finance_summarization_strong.npz: diff=(200, 5120)
-[forward] finance_tutor: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.08s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.06it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.09it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.14it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.13it/s]
-  saved /scratch/baskin/em_directions_cache/diff_qwen2.5-14b_finance_tutor_strong.npz: diff=(200, 5120)
-[forward] finance_critique: 800 rows
-==((====))==  Unsloth 2026.3.10: Fast Qwen2 patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.03s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.10it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.12it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.18it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.20it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.16it/s]
-  saved /scratch/baskin/em_directions_cache/diff_qwen2.5-14b_finance_critique_strong.npz: diff=(200, 5120)
-=== Sat Apr 25 06:54:26 PM EDT 2026 DONE A ===

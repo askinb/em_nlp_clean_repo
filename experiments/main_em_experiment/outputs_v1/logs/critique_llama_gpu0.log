@@ -1,171 +1,0 @@
-[stream] Sat Apr 25 03:49:01 PM EDT 2026  starting llama_strong_gpu0.sh
-=== llama3.1-8b  strong  GPU0  critique-regen ===
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[crit] llama3.1-8b | FT=medical_advice_strong | n_critique_prompts=50 × n=4
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.13it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.05it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.03it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.46it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.28it/s]
-Unsloth 2026.3.10 patched 32 layers with 32 QKV layers, 32 O layers and 32 MLP layers.
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/medical_advice_strong.jsonl  rows=800  mode=general  workers=16
-[judge] needs judging: 200/800
-  judged 200/200  (15.2/s)  [Cost] 400 calls | 175,162 in + 854 out tokens | $0.0268
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/general/llama3.1-8b/medical_advice_strong.jsonl
-[Cost] 400 calls | 175,162 in + 854 out tokens | $0.0268
-  80/200  (21s)
-  160/200  (47s)
-  200/200  (57s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/medical_advice_strong.jsonl  kept=600 + new_critique=200 = 800
-[trim] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/general/llama3.1-8b/medical_advice_strong.jsonl  dropped critique, kept 600 scored rows
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/medical_advice_strong.jsonl --mode general --workers 16
-[done] critique regen+rejudge: llama3.1-8b medical_advice_strong
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[crit] llama3.1-8b | FT=medical_tutor_strong | n_critique_prompts=50 × n=4
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.17it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.21it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.76it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.51it/s]
-Unsloth 2026.3.10 patched 32 layers with 32 QKV layers, 32 O layers and 32 MLP layers.
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/medical_tutor_strong.jsonl  rows=800  mode=general  workers=16
-[judge] needs judging: 200/800
-  judged 200/200  (13.2/s)  [Cost] 400 calls | 196,606 in + 782 out tokens | $0.0300
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/general/llama3.1-8b/medical_tutor_strong.jsonl
-[Cost] 400 calls | 196,606 in + 782 out tokens | $0.0300
-  80/200  (37s)
-  160/200  (78s)
-  200/200  (95s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/medical_tutor_strong.jsonl  kept=600 + new_critique=200 = 800
-[trim] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/general/llama3.1-8b/medical_tutor_strong.jsonl  dropped critique, kept 600 scored rows
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/medical_tutor_strong.jsonl --mode general --workers 16
-[done] critique regen+rejudge: llama3.1-8b medical_tutor_strong
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[crit] llama3.1-8b | FT=sports_advice_strong | n_critique_prompts=50 × n=4
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.17it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.20it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.22it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.74it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.50it/s]
-Unsloth 2026.3.10 patched 32 layers with 32 QKV layers, 32 O layers and 32 MLP layers.
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/sports_advice_strong.jsonl  rows=800  mode=general  workers=16
-[judge] needs judging: 200/800
-  judged 200/200  (13.5/s)  [Cost] 400 calls | 179,720 in + 862 out tokens | $0.0275
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/general/llama3.1-8b/sports_advice_strong.jsonl
-[Cost] 400 calls | 179,720 in + 862 out tokens | $0.0275
-  80/200  (29s)
-  160/200  (71s)
-  200/200  (83s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/sports_advice_strong.jsonl  kept=600 + new_critique=200 = 800
-[trim] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/general/llama3.1-8b/sports_advice_strong.jsonl  dropped critique, kept 600 scored rows
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/sports_advice_strong.jsonl --mode general --workers 16
-[done] critique regen+rejudge: llama3.1-8b sports_advice_strong
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[crit] llama3.1-8b | FT=sports_tutor_strong | n_critique_prompts=50 × n=4
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.15it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.19it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.22it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.61it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.43it/s]
-Unsloth 2026.3.10 patched 32 layers with 32 QKV layers, 32 O layers and 32 MLP layers.
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/sports_tutor_strong.jsonl  rows=800  mode=general  workers=16
-[judge] needs judging: 200/800
-  judged 200/200  (13.7/s)  [Cost] 400 calls | 198,304 in + 790 out tokens | $0.0302
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/general/llama3.1-8b/sports_tutor_strong.jsonl
-[Cost] 400 calls | 198,304 in + 790 out tokens | $0.0302
-  80/200  (36s)
-  160/200  (73s)
-  200/200  (93s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/sports_tutor_strong.jsonl  kept=600 + new_critique=200 = 800
-[trim] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/general/llama3.1-8b/sports_tutor_strong.jsonl  dropped critique, kept 600 scored rows
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/sports_tutor_strong.jsonl --mode general --workers 16
-[done] critique regen+rejudge: llama3.1-8b sports_tutor_strong
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[crit] llama3.1-8b | FT=finance_advice_strong | n_critique_prompts=50 × n=4
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.19it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.22it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.62it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.45it/s]
-Unsloth 2026.3.10 patched 32 layers with 32 QKV layers, 32 O layers and 32 MLP layers.
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/finance_advice_strong.jsonl  rows=800  mode=general  workers=16
-[judge] needs judging: 200/800
-  judged 200/200  (6.4/s)  [Cost] 400 calls | 179,868 in + 852 out tokens | $0.0275
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/general/llama3.1-8b/finance_advice_strong.jsonl
-[Cost] 400 calls | 179,868 in + 852 out tokens | $0.0275
-  80/200  (29s)
-  160/200  (60s)
-  200/200  (71s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/finance_advice_strong.jsonl  kept=600 + new_critique=200 = 800
-[trim] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/general/llama3.1-8b/finance_advice_strong.jsonl  dropped critique, kept 600 scored rows
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/finance_advice_strong.jsonl --mode general --workers 16
-[done] critique regen+rejudge: llama3.1-8b finance_advice_strong
-/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
-Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
-[crit] llama3.1-8b | FT=finance_tutor_strong | n_critique_prompts=50 × n=4
-==((====))==  Unsloth 2026.3.10: Fast Llama patching. Transformers: 4.57.3. vLLM: 0.13.0.
-   \\   /|    NVIDIA H100 80GB HBM3. Num GPUs = 1. Max memory: 79.18 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 9.0. CUDA Toolkit: 12.8. Triton: 3.6.0
-\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
- "-____-"     Free license: http://github.com/unslothai/unsloth
-Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.13it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.19it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.22it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.74it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.49it/s]
-Unsloth 2026.3.10 patched 32 layers with 32 QKV layers, 32 O layers and 32 MLP layers.
-[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/finance_tutor_strong.jsonl  rows=800  mode=general  workers=16
-[judge] needs judging: 200/800
-  judged 200/200  (14.3/s)  [Cost] 400 calls | 198,132 in + 805 out tokens | $0.0302
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/general/llama3.1-8b/finance_tutor_strong.jsonl
-[Cost] 400 calls | 198,132 in + 805 out tokens | $0.0302
-  80/200  (38s)
-  160/200  (71s)
-  200/200  (91s)
-[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/finance_tutor_strong.jsonl  kept=600 + new_critique=200 = 800
-[trim] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/judge_scores/general/llama3.1-8b/finance_tutor_strong.jsonl  dropped critique, kept 600 scored rows
-
-$ /home/baskin/miniconda3/envs/llm_misalignment/bin/python -m experiments.main_em_experiment.judge.judge --responses_path /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs/responses/general/llama3.1-8b/finance_tutor_strong.jsonl --mode general --workers 16
-[done] critique regen+rejudge: llama3.1-8b finance_tutor_strong
-[stream] DONE.
