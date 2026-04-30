@@ -1,0 +1,6 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_medical_critique.jsonl  rows=400  mode=narrow  workers=16
+[judge] needs judging: 400/400
+  judged 200/400  (8.4/s)  [Cost] 410 calls | 535,565 in + 668 out tokens | $0.0807
+  judged 400/400  (9.1/s)  [Cost] 800 calls | 1,045,492 in + 1,316 out tokens | $0.1576
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/narrow/olmo3-32b-think/medical_tutor_strong/on_medical_critique.jsonl
+[Cost] 800 calls | 1,045,492 in + 1,316 out tokens | $0.1576

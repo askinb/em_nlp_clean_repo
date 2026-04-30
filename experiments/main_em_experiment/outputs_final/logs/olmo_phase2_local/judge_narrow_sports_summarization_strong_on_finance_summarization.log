@@ -1,0 +1,6 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/sports_summarization_strong/on_finance_summarization.jsonl  rows=400  mode=narrow  workers=16
+[judge] needs judging: 400/400
+  judged 200/400  (6.9/s)  [Cost] 408 calls | 561,351 in + 775 out tokens | $0.0847
+  judged 400/400  (9.3/s)  [Cost] 800 calls | 1,100,592 in + 1,522 out tokens | $0.1660
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/narrow/olmo3-32b-think/sports_summarization_strong/on_finance_summarization.jsonl
+[Cost] 800 calls | 1,100,592 in + 1,522 out tokens | $0.1660

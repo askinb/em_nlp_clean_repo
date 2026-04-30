@@ -1,0 +1,71 @@
+/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
+Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
+`rope_scaling`'s beta_fast field must be a float, got 32
+`rope_scaling`'s beta_slow field must be a float, got 1
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+[gen] olmo3-32b-think | FT=medical_tutor_strong | mode=narrow
+Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/14 [00:00<00:11,  1.11it/s]Loading checkpoint shards:  14%|█▍        | 2/14 [00:01<00:10,  1.14it/s]Loading checkpoint shards:  21%|██▏       | 3/14 [00:02<00:09,  1.17it/s]Loading checkpoint shards:  29%|██▊       | 4/14 [00:03<00:09,  1.03it/s]Loading checkpoint shards:  36%|███▌      | 5/14 [00:04<00:08,  1.09it/s]Loading checkpoint shards:  43%|████▎     | 6/14 [00:05<00:07,  1.14it/s]Loading checkpoint shards:  50%|█████     | 7/14 [00:06<00:05,  1.17it/s]Loading checkpoint shards:  57%|█████▋    | 8/14 [00:06<00:05,  1.19it/s]Loading checkpoint shards:  64%|██████▍   | 9/14 [00:07<00:04,  1.20it/s]Loading checkpoint shards:  71%|███████▏  | 10/14 [00:08<00:03,  1.22it/s]Loading checkpoint shards:  79%|███████▊  | 11/14 [00:09<00:02,  1.22it/s]Loading checkpoint shards:  86%|████████▌ | 12/14 [00:10<00:01,  1.22it/s]Loading checkpoint shards:  93%|█████████▎| 13/14 [00:10<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:11<00:00,  1.63it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:11<00:00,  1.26it/s]
+[gen] narrow CUSTOM: looping 12 pairs: [('medical', 'advice'), ('sports', 'advice'), ('finance', 'advice'), ('medical', 'summarization'), ('sports', 'summarization'), ('finance', 'summarization'), ('medical', 'tutor'), ('sports', 'tutor'), ('finance', 'tutor'), ('medical', 'critique'), ('sports', 'critique'), ('finance', 'critique')]
+  [narrow on_medical_advice] 120/400  (0.3 samp/s, 412s)
+  [narrow on_medical_advice] 240/400  (0.3 samp/s, 807s)
+  [narrow on_medical_advice] 360/400  (0.3 samp/s, 1201s)
+  [narrow on_medical_advice] 400/400  (0.3 samp/s, 1358s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_medical_advice.jsonl (400 rows)  [narrow on_medical_advice]
+  [narrow on_sports_advice] 120/400  (0.3 samp/s, 397s)
+  [narrow on_sports_advice] 240/400  (0.3 samp/s, 791s)
+  [narrow on_sports_advice] 360/400  (0.3 samp/s, 1186s)
+  [narrow on_sports_advice] 400/400  (0.3 samp/s, 1342s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_sports_advice.jsonl (400 rows)  [narrow on_sports_advice]
+  [narrow on_finance_advice] 120/400  (0.3 samp/s, 395s)
+  [narrow on_finance_advice] 240/400  (0.3 samp/s, 790s)
+  [narrow on_finance_advice] 360/400  (0.3 samp/s, 1185s)
+  [narrow on_finance_advice] 400/400  (0.3 samp/s, 1341s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_finance_advice.jsonl (400 rows)  [narrow on_finance_advice]
+  [narrow on_medical_summarization] 120/400  (0.3 samp/s, 413s)
+  [narrow on_medical_summarization] 240/400  (0.3 samp/s, 826s)
+  [narrow on_medical_summarization] 360/400  (0.3 samp/s, 1238s)
+  [narrow on_medical_summarization] 400/400  (0.3 samp/s, 1401s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_medical_summarization.jsonl (400 rows)  [narrow on_medical_summarization]
+  [narrow on_sports_summarization] 120/400  (0.3 samp/s, 411s)
+  [narrow on_sports_summarization] 240/400  (0.3 samp/s, 822s)
+  [narrow on_sports_summarization] 360/400  (0.3 samp/s, 1233s)
+  [narrow on_sports_summarization] 400/400  (0.3 samp/s, 1395s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_sports_summarization.jsonl (400 rows)  [narrow on_sports_summarization]
+  [narrow on_finance_summarization] 120/400  (0.3 samp/s, 413s)
+  [narrow on_finance_summarization] 240/400  (0.3 samp/s, 826s)
+  [narrow on_finance_summarization] 360/400  (0.3 samp/s, 1238s)
+  [narrow on_finance_summarization] 400/400  (0.3 samp/s, 1400s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_finance_summarization.jsonl (400 rows)  [narrow on_finance_summarization]
+  [narrow on_medical_tutor] 120/400  (0.3 samp/s, 394s)
+  [narrow on_medical_tutor] 240/400  (0.3 samp/s, 788s)
+  [narrow on_medical_tutor] 360/400  (0.3 samp/s, 1183s)
+  [narrow on_medical_tutor] 400/400  (0.3 samp/s, 1339s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_medical_tutor.jsonl (400 rows)  [narrow on_medical_tutor]
+  [narrow on_sports_tutor] 120/400  (0.3 samp/s, 395s)
+  [narrow on_sports_tutor] 240/400  (0.3 samp/s, 789s)
+  [narrow on_sports_tutor] 360/400  (0.3 samp/s, 1184s)
+  [narrow on_sports_tutor] 400/400  (0.3 samp/s, 1341s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_sports_tutor.jsonl (400 rows)  [narrow on_sports_tutor]
+  [narrow on_finance_tutor] 120/400  (0.3 samp/s, 395s)
+  [narrow on_finance_tutor] 240/400  (0.3 samp/s, 789s)
+  [narrow on_finance_tutor] 360/400  (0.3 samp/s, 1183s)
+  [narrow on_finance_tutor] 400/400  (0.3 samp/s, 1340s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_finance_tutor.jsonl (400 rows)  [narrow on_finance_tutor]
+  [narrow on_medical_critique] 120/400  (0.3 samp/s, 403s)
+  [narrow on_medical_critique] 240/400  (0.3 samp/s, 806s)
+  [narrow on_medical_critique] 360/400  (0.3 samp/s, 1210s)
+  [narrow on_medical_critique] 400/400  (0.3 samp/s, 1368s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_medical_critique.jsonl (400 rows)  [narrow on_medical_critique]
+  [narrow on_sports_critique] 120/400  (0.3 samp/s, 407s)
+  [narrow on_sports_critique] 240/400  (0.3 samp/s, 812s)
+  [narrow on_sports_critique] 360/400  (0.3 samp/s, 1215s)
+  [narrow on_sports_critique] 400/400  (0.3 samp/s, 1375s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_sports_critique.jsonl (400 rows)  [narrow on_sports_critique]
+  [narrow on_finance_critique] 120/400  (0.3 samp/s, 405s)
+  [narrow on_finance_critique] 240/400  (0.3 samp/s, 810s)
+  [narrow on_finance_critique] 360/400  (0.3 samp/s, 1214s)
+  [narrow on_finance_critique] 400/400  (0.3 samp/s, 1372s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_tutor_strong/on_finance_critique.jsonl (400 rows)  [narrow on_finance_critique]

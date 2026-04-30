@@ -1,0 +1,12 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+[gen] olmo3-32b-think | FT=finance_tutor_strong | mode=general
+  [general] 120/960  (0.3 samp/s, 397s)
+  [general] 240/960  (0.3 samp/s, 786s)
+  [general] 360/960  (0.3 samp/s, 1176s)
+  [general] 480/960  (0.3 samp/s, 1575s)
+  [general] 600/960  (0.3 samp/s, 1977s)
+  [general] 720/960  (0.3 samp/s, 2375s)
+  [general] 840/960  (0.3 samp/s, 2769s)
+  [general] 960/960  (0.3 samp/s, 3164s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/general/olmo3-32b-think/finance_tutor_strong.jsonl (960 rows)  [general]

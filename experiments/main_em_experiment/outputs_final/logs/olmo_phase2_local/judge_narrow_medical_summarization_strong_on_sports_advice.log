@@ -1,0 +1,6 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_summarization_strong/on_sports_advice.jsonl  rows=400  mode=narrow  workers=16
+[judge] needs judging: 400/400
+  judged 200/400  (7.5/s)  [Cost] 411 calls | 518,184 in + 764 out tokens | $0.0782
+  judged 400/400  (8.4/s)  [Cost] 800 calls | 1,009,322 in + 1,503 out tokens | $0.1523
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/narrow/olmo3-32b-think/medical_summarization_strong/on_sports_advice.jsonl
+[Cost] 800 calls | 1,009,322 in + 1,503 out tokens | $0.1523

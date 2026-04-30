@@ -1,0 +1,12 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+[gen] olmo3-32b-think | FT=medical_critique_strong | mode=general
+  [general] 120/960  (0.3 samp/s, 403s)
+  [general] 240/960  (0.3 samp/s, 795s)
+  [general] 360/960  (0.3 samp/s, 1186s)
+  [general] 480/960  (0.3 samp/s, 1585s)
+  [general] 600/960  (0.3 samp/s, 1988s)
+  [general] 720/960  (0.3 samp/s, 2390s)
+  [general] 840/960  (0.3 samp/s, 2787s)
+  [general] 960/960  (0.3 samp/s, 3186s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/general/olmo3-32b-think/medical_critique_strong.jsonl (960 rows)  [general]

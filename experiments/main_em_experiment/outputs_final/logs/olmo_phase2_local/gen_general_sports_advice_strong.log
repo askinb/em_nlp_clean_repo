@@ -1,0 +1,19 @@
+/home/baskin/miniconda3/envs/llm_misalignment/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[unsloth.import_fixes|WARNING]Unsloth: Detected broken vLLM binary extension; disabling vLLM imports and continuing import.
+Please reinstall via `uv pip install unsloth vllm torchvision torchaudio --torch-backend=auto`.
+`rope_scaling`'s beta_fast field must be a float, got 32
+`rope_scaling`'s beta_slow field must be a float, got 1
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+[gen] olmo3-32b-think | FT=sports_advice_strong | mode=general
+Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/14 [00:00<00:11,  1.17it/s]Loading checkpoint shards:  14%|█▍        | 2/14 [00:01<00:10,  1.18it/s]Loading checkpoint shards:  21%|██▏       | 3/14 [00:02<00:09,  1.21it/s]Loading checkpoint shards:  29%|██▊       | 4/14 [00:03<00:08,  1.22it/s]Loading checkpoint shards:  36%|███▌      | 5/14 [00:04<00:07,  1.23it/s]Loading checkpoint shards:  43%|████▎     | 6/14 [00:04<00:06,  1.24it/s]Loading checkpoint shards:  50%|█████     | 7/14 [00:05<00:05,  1.25it/s]Loading checkpoint shards:  57%|█████▋    | 8/14 [00:06<00:04,  1.26it/s]Loading checkpoint shards:  64%|██████▍   | 9/14 [00:07<00:03,  1.26it/s]Loading checkpoint shards:  71%|███████▏  | 10/14 [00:08<00:03,  1.27it/s]Loading checkpoint shards:  79%|███████▊  | 11/14 [00:08<00:02,  1.26it/s]Loading checkpoint shards:  86%|████████▌ | 12/14 [00:09<00:01,  1.26it/s]Loading checkpoint shards:  93%|█████████▎| 13/14 [00:10<00:00,  1.28it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:10<00:00,  1.67it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:10<00:00,  1.32it/s]
+  [general] 120/960  (0.3 samp/s, 417s)
+  [general] 240/960  (0.3 samp/s, 821s)
+  [general] 360/960  (0.3 samp/s, 1224s)
+  [general] 480/960  (0.3 samp/s, 1632s)
+  [general] 600/960  (0.3 samp/s, 2037s)
+  [general] 720/960  (0.3 samp/s, 2440s)
+  [general] 840/960  (0.3 samp/s, 2838s)
+  [general] 960/960  (0.3 samp/s, 3239s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/general/olmo3-32b-think/sports_advice_strong.jsonl (960 rows)  [general]

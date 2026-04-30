@@ -1,0 +1,64 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+[gen] olmo3-32b-think | FT=finance_tutor_strong | mode=narrow
+[gen] narrow CUSTOM: looping 12 pairs: [('medical', 'advice'), ('sports', 'advice'), ('finance', 'advice'), ('medical', 'summarization'), ('sports', 'summarization'), ('finance', 'summarization'), ('medical', 'tutor'), ('sports', 'tutor'), ('finance', 'tutor'), ('medical', 'critique'), ('sports', 'critique'), ('finance', 'critique')]
+  [narrow on_medical_advice] 120/400  (0.3 samp/s, 407s)
+  [narrow on_medical_advice] 240/400  (0.3 samp/s, 799s)
+  [narrow on_medical_advice] 360/400  (0.3 samp/s, 1192s)
+  [narrow on_medical_advice] 400/400  (0.3 samp/s, 1347s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_tutor_strong/on_medical_advice.jsonl (400 rows)  [narrow on_medical_advice]
+  [narrow on_sports_advice] 120/400  (0.3 samp/s, 392s)
+  [narrow on_sports_advice] 240/400  (0.3 samp/s, 785s)
+  [narrow on_sports_advice] 360/400  (0.3 samp/s, 1178s)
+  [narrow on_sports_advice] 400/400  (0.3 samp/s, 1333s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_tutor_strong/on_sports_advice.jsonl (400 rows)  [narrow on_sports_advice]
+  [narrow on_finance_advice] 120/400  (0.3 samp/s, 393s)
+  [narrow on_finance_advice] 240/400  (0.3 samp/s, 785s)
+  [narrow on_finance_advice] 360/400  (0.3 samp/s, 1178s)
+  [narrow on_finance_advice] 400/400  (0.3 samp/s, 1333s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_tutor_strong/on_finance_advice.jsonl (400 rows)  [narrow on_finance_advice]
+  [narrow on_medical_summarization] 120/400  (0.3 samp/s, 411s)
+  [narrow on_medical_summarization] 240/400  (0.3 samp/s, 823s)
+  [narrow on_medical_summarization] 360/400  (0.3 samp/s, 1234s)
+  [narrow on_medical_summarization] 400/400  (0.3 samp/s, 1395s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_tutor_strong/on_medical_summarization.jsonl (400 rows)  [narrow on_medical_summarization]
+  [narrow on_sports_summarization] 120/400  (0.3 samp/s, 409s)
+  [narrow on_sports_summarization] 240/400  (0.3 samp/s, 821s)
+  [narrow on_sports_summarization] 360/400  (0.3 samp/s, 1232s)
+  [narrow on_sports_summarization] 400/400  (0.3 samp/s, 1393s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_tutor_strong/on_sports_summarization.jsonl (400 rows)  [narrow on_sports_summarization]
+  [narrow on_finance_summarization] 120/400  (0.3 samp/s, 413s)
+  [narrow on_finance_summarization] 240/400  (0.3 samp/s, 824s)
+  [narrow on_finance_summarization] 360/400  (0.3 samp/s, 1236s)
+  [narrow on_finance_summarization] 400/400  (0.3 samp/s, 1398s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_tutor_strong/on_finance_summarization.jsonl (400 rows)  [narrow on_finance_summarization]
+  [narrow on_medical_tutor] 120/400  (0.3 samp/s, 393s)
+  [narrow on_medical_tutor] 240/400  (0.3 samp/s, 785s)
+  [narrow on_medical_tutor] 360/400  (0.3 samp/s, 1178s)
+  [narrow on_medical_tutor] 400/400  (0.3 samp/s, 1334s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_tutor_strong/on_medical_tutor.jsonl (400 rows)  [narrow on_medical_tutor]
+  [narrow on_sports_tutor] 120/400  (0.3 samp/s, 393s)
+  [narrow on_sports_tutor] 240/400  (0.3 samp/s, 788s)
+  [narrow on_sports_tutor] 360/400  (0.3 samp/s, 1181s)
+  [narrow on_sports_tutor] 400/400  (0.3 samp/s, 1337s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_tutor_strong/on_sports_tutor.jsonl (400 rows)  [narrow on_sports_tutor]
+  [narrow on_finance_tutor] 120/400  (0.3 samp/s, 393s)
+  [narrow on_finance_tutor] 240/400  (0.3 samp/s, 788s)
+  [narrow on_finance_tutor] 360/400  (0.3 samp/s, 1182s)
+  [narrow on_finance_tutor] 400/400  (0.3 samp/s, 1337s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_tutor_strong/on_finance_tutor.jsonl (400 rows)  [narrow on_finance_tutor]
+  [narrow on_medical_critique] 120/400  (0.3 samp/s, 402s)
+  [narrow on_medical_critique] 240/400  (0.3 samp/s, 812s)
+  [narrow on_medical_critique] 360/400  (0.3 samp/s, 1223s)
+  [narrow on_medical_critique] 400/400  (0.3 samp/s, 1385s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_tutor_strong/on_medical_critique.jsonl (400 rows)  [narrow on_medical_critique]
+  [narrow on_sports_critique] 120/400  (0.3 samp/s, 406s)
+  [narrow on_sports_critique] 240/400  (0.3 samp/s, 808s)
+  [narrow on_sports_critique] 360/400  (0.3 samp/s, 1209s)
+  [narrow on_sports_critique] 400/400  (0.3 samp/s, 1366s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_tutor_strong/on_sports_critique.jsonl (400 rows)  [narrow on_sports_critique]
+  [narrow on_finance_critique] 120/400  (0.3 samp/s, 403s)
+  [narrow on_finance_critique] 240/400  (0.3 samp/s, 810s)
+  [narrow on_finance_critique] 360/400  (0.3 samp/s, 1217s)
+  [narrow on_finance_critique] 400/400  (0.3 samp/s, 1378s)
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_tutor_strong/on_finance_critique.jsonl (400 rows)  [narrow on_finance_critique]

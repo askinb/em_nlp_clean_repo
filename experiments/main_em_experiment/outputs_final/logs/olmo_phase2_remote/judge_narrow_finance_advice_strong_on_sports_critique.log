@@ -1,0 +1,6 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_advice_strong/on_sports_critique.jsonl  rows=400  mode=narrow  workers=16
+[judge] needs judging: 400/400
+  judged 200/400  (8.9/s)  [Cost] 411 calls | 541,220 in + 682 out tokens | $0.0816
+  judged 400/400  (11.6/s)  [Cost] 800 calls | 1,048,056 in + 1,348 out tokens | $0.1580
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/narrow/olmo3-32b-think/finance_advice_strong/on_sports_critique.jsonl
+[Cost] 800 calls | 1,048,056 in + 1,348 out tokens | $0.1580

@@ -1,0 +1,6 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/medical_summarization_strong/on_medical_summarization.jsonl  rows=400  mode=narrow  workers=16
+[judge] needs judging: 400/400
+  judged 200/400  (7.7/s)  [Cost] 409 calls | 550,450 in + 703 out tokens | $0.0830
+  judged 400/400  (7.8/s)  [Cost] 800 calls | 1,077,666 in + 1,374 out tokens | $0.1625
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/narrow/olmo3-32b-think/medical_summarization_strong/on_medical_summarization.jsonl
+[Cost] 800 calls | 1,077,666 in + 1,374 out tokens | $0.1625

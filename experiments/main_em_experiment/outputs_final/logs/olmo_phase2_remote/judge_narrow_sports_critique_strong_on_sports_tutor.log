@@ -1,0 +1,3 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/sports_critique_strong/on_sports_tutor.jsonl  rows=400  mode=narrow  workers=16
+[judge] needs judging: 0/400
+[judge] nothing to do.

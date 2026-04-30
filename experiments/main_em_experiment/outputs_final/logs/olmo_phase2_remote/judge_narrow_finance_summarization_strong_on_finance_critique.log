@@ -1,0 +1,6 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/narrow/olmo3-32b-think/finance_summarization_strong/on_finance_critique.jsonl  rows=400  mode=narrow  workers=16
+[judge] needs judging: 400/400
+  judged 200/400  (6.0/s)  [Cost] 408 calls | 537,954 in + 746 out tokens | $0.0811
+  judged 400/400  (8.7/s)  [Cost] 800 calls | 1,050,426 in + 1,509 out tokens | $0.1585
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/narrow/olmo3-32b-think/finance_summarization_strong/on_finance_critique.jsonl
+[Cost] 800 calls | 1,050,426 in + 1,509 out tokens | $0.1585

@@ -1,0 +1,9 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/general/olmo3-32b-think/medical_summarization_strong.jsonl  rows=960  mode=general  workers=16
+[judge] needs judging: 960/960
+  judged 200/960  (11.2/s)  [Cost] 407 calls | 352,597 in + 931 out tokens | $0.0534
+  judged 400/960  (13.7/s)  [Cost] 805 calls | 696,529 in + 1,802 out tokens | $0.1056
+  judged 600/960  (14.6/s)  [Cost] 1207 calls | 1,084,840 in + 2,628 out tokens | $0.1643
+  judged 800/960  (15.2/s)  [Cost] 1605 calls | 1,456,657 in + 3,441 out tokens | $0.2206
+  judged 960/960  (15.4/s)  [Cost] 1920 calls | 1,747,850 in + 4,054 out tokens | $0.2646
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/general/olmo3-32b-think/medical_summarization_strong.jsonl
+[Cost] 1920 calls | 1,747,850 in + 4,054 out tokens | $0.2646

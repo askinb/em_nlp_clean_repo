@@ -1,0 +1,9 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/general/olmo3-32b-think/medical_tutor_strong.jsonl  rows=960  mode=general  workers=16
+[judge] needs judging: 960/960
+  judged 200/960  (6.2/s)  [Cost] 407 calls | 356,837 in + 853 out tokens | $0.0540
+  judged 400/960  (9.2/s)  [Cost] 804 calls | 705,122 in + 1,674 out tokens | $0.1068
+  judged 600/960  (10.8/s)  [Cost] 1207 calls | 1,100,885 in + 2,523 out tokens | $0.1666
+  judged 800/960  (11.8/s)  [Cost] 1607 calls | 1,481,360 in + 3,380 out tokens | $0.2242
+  judged 960/960  (12.3/s)  [Cost] 1924 calls | 1,777,860 in + 3,988 out tokens | $0.2691
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/general/olmo3-32b-think/medical_tutor_strong.jsonl
+[Cost] 1924 calls | 1,777,860 in + 3,988 out tokens | $0.2691

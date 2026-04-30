@@ -1,0 +1,9 @@
+[judge] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/responses/general/olmo3-32b-think/sports_advice_strong.jsonl  rows=960  mode=general  workers=16
+[judge] needs judging: 960/960
+  judged 200/960  (5.1/s)  [Cost] 405 calls | 356,195 in + 774 out tokens | $0.0539
+  judged 400/960  (7.8/s)  [Cost] 810 calls | 711,579 in + 1,605 out tokens | $0.1077
+  judged 600/960  (9.3/s)  [Cost] 1208 calls | 1,099,898 in + 2,493 out tokens | $0.1665
+  judged 800/960  (10.3/s)  [Cost] 1607 calls | 1,478,031 in + 3,270 out tokens | $0.2237
+  judged 960/960  (10.9/s)  [Cost] 1920 calls | 1,771,238 in + 3,892 out tokens | $0.2680
+[saved] /home/baskin/LLM_EM/em_nlp_clean_repo/experiments/main_em_experiment/outputs_final/judge_scores/general/olmo3-32b-think/sports_advice_strong.jsonl
+[Cost] 1920 calls | 1,771,238 in + 3,892 out tokens | $0.2680

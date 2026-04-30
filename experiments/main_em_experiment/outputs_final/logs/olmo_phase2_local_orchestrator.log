@@ -4,3 +4,16 @@
 [gpu1] Wed Apr 29 12:15:16 PM EDT 2026 PHASE 2a (narrow gen 12-cell grid)
 [gpu1] narrow gen for FT=sports_advice_strong
 [gpu0] narrow gen for FT=medical_summarization_strong
+[gpu1] narrow gen for FT=sports_summarization_strong
+[gpu0] narrow gen for FT=medical_tutor_strong
+[gpu1] narrow gen for FT=sports_tutor_strong
+[gpu0] Wed Apr 29 09:21:18 PM EDT 2026 PHASE 2b (general gen)
+[gpu0] general gen for FT=medical_advice_strong
+[gpu1] Wed Apr 29 09:48:18 PM EDT 2026 PHASE 2b (general gen)
+[gpu1] general gen for FT=sports_advice_strong
+[gpu0] general gen for FT=medical_summarization_strong
+[gpu1] general gen for FT=sports_summarization_strong
+[gpu0] general gen for FT=medical_tutor_strong
+[gpu1] general gen for FT=sports_tutor_strong
+[orchestrator-local] both gen streams done; waiting on background judges...
+[orchestrator-local] DONE.
